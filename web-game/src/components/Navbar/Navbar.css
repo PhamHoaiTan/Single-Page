@@ -4,9 +4,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 4vw;
-    object-fit: cover;
 }
 .logo img{
     width: 100%;
@@ -18,9 +15,6 @@
 .nav-left{
     display: flex;
     align-items: center;
-}
-.nav-left h1{
-    font-size: 30px;
 }
 .nav-menu{
     display: flex;

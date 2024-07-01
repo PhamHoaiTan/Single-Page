@@ -1,49 +1,7 @@
 .App {
-  text-align: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
-
-.App-header nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.banner {
-  /* background-image: url('path/to/banner-image'); */
-  background-size: cover;
-  color: white;
-  padding: 50px 20px;
-}
-
-.trending, .flash-sales {
-  padding: 20px;
-}
-
-.games {
-  display: flex;
-  justify-content: space-around;
-}
-
-.game {
-  text-align: center;
-}
-
-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
-}
-
-.social-media a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+body{
+  min-height: 100vw;
 }
