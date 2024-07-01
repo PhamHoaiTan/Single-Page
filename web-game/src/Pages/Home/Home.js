@@ -1,7 +1,7 @@
 // src/Home.js
 import React from 'react';
 import './Home.css';
-import { games } from './games';
+import { games } from '../../assets/games/game';
 
 function Home() {
   return (

@@ -1,7 +1,7 @@
 // src/Catalogue.js
 import React from 'react';
 import './Catalogue.css';
-import { games } from './games';
+import { games } from '../../assets/games/game';
 
 function Catalogue() {
   const genres = [...new Set(games.map(game => game.genre))];

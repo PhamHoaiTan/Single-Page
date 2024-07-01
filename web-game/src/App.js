@@ -1,19 +1,17 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './Home';
-import Catalogue from './Catalogue';
+import Home from './Pages/Home/Home';
+import Catalogue from './Pages/Catelogues/Catalogue';
 
 function App() {
   return (
-    <Router>
+    <Routes>
       <div className="App">
-        <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/catalogue" component={Catalogue} />
-        </Switch>
       </div>
-    </Router>
+    </Routes>
   );
 }
 

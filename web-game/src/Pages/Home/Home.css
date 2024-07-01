@@ -16,7 +16,7 @@
   }
   
   .banner {
-    background-image: url('path/to/banner-image');
+    /* background-image: url('path/to/banner-image'); */
     background-size: cover;
     color: white;
     padding: 50px 20px;
