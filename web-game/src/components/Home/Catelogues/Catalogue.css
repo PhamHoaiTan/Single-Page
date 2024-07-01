@@ -1,0 +1,44 @@
+/* src/Catalogue.css */
+.Catalogue {
+    text-align: center;
+  }
+  
+  .Catalogue-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .Catalogue-header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .genre-section {
+    padding: 20px;
+  }
+  
+  .games {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .game {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
