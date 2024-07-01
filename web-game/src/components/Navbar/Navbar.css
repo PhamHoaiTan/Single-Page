@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 4vw;
+    object-fit: cover;
 }
 .logo img{
     width: 100%;
@@ -19,7 +20,7 @@
     align-items: center;
 }
 .nav-left h1{
-    font-size: max(24px,2vw);
+    font-size: 30px;
 }
 .nav-menu{
     display: flex;
@@ -28,5 +29,5 @@
 .nav-menu a{
     text-decoration: none;
     color: white;
-    font-size: max(18px,1vw);
+    font-size: 16px;
 }

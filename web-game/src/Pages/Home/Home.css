@@ -2,12 +2,6 @@
 .Home {
     text-align: center;
   }
-  .banner {
-    /* background-image: url('path/to/banner-image'); */
-    background-size: cover;
-    color: white;
-    padding: 50px 20px;
-  }
   
   .trending, .flash-sales {
     padding: 20px;
@@ -30,11 +24,6 @@
     width: 100%;
   }
   
-  footer {
-    background-color: #282c34;
-    color: white;
-    padding: 10px;
-  }
   
   .social-media a {
     margin: 0 10px;
