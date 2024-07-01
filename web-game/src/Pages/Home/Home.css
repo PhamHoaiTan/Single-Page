@@ -2,19 +2,6 @@
 .Home {
     text-align: center;
   }
-  
-  .Home-header {
-    background-color: #282c34;
-    padding: 20px;
-    color: white;
-  }
-  
-  .Home-header nav a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-  }
-  
   .banner {
     /* background-image: url('path/to/banner-image'); */
     background-size: cover;
@@ -35,6 +22,12 @@
   .game {
     text-align: center;
     margin: 10px;
+    width: 20vw;
+    background-color: gray;
+    border-radius: 5px;
+  }
+  .game img{
+    width: 100%;
   }
   
   footer {

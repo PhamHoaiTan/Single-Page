@@ -1,17 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import {  Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Pages/Home/Home';
-import Catalogue from './Pages/Catelogues/Catalogue';
+import Catalogue from './Pages/Catalogues/Catalogue';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <Routes>
       <div className="App">
-          <Route exact path="/" component={Home} />
-          <Route path="/catalogue" component={Catalogue} />
-      </div>
+        <Navbar/>
+    <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/catalogue" element={<Catalogue/>} />
     </Routes>
+    <Footer/>
+    </div>
   );
 }
 
