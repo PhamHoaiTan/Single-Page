@@ -5,13 +5,17 @@ const Navbar = () => {
   return (
     <div className="Navbar">
       <div className="nav-left">
-    <img src={assets.logo} alt="" />
-    <h1>FPT GAMING ZONE</h1>
+        <img src={assets.logo} alt="" className='logo' />
+        <h1>FGZ</h1>
       </div>
-    <nav>
+    <nav className='nav-menu'>
       <a href="/">Home</a>
       <a href="/catalogue">Catalogue</a>
+      <a href="/card">Card</a>
     </nav>
+    <div className="nav-right">
+      asdf
+    </div>
   </div>
   )
 }

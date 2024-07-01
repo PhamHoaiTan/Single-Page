@@ -2,16 +2,13 @@
 import React from 'react';
 import './Home.css';
 import { games } from '../../assets/games/game';
+import Header from '../../components/Header/Header';
 
 function Home() {
   return (
     <div className="Home">
+      <Header/>
       <main>
-        <section className="banner">
-          <h2>Welcome to FGZ</h2>
-          <p>Browse our popular games here</p>
-          <button>Browse Now</button>
-        </section>
         <section className="trending">
           <h2>Trending Now</h2>
           <div className="games">
