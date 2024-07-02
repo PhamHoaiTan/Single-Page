@@ -1,6 +1,9 @@
-import React from 'react'
-import './Header.css'
-const Header = () => {
+// src/components/Header/Header.jsx
+import React from 'react';
+import './Header.css';
+import headerImage from '../../assets/Carousel.webp'; // Cập nhật đường dẫn đúng
+
+function Header() {
   return (
     <div className="header">
     <div className="header-text">
@@ -11,7 +14,6 @@ const Header = () => {
     </div>
     </div>
   </div>
-  )
 }
 
-export default Header
+export default Header;

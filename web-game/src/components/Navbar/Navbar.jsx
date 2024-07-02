@@ -1,23 +1,15 @@
-import React from 'react'
- import './Navbar.css'
- import { assets } from '../../assets/assets'
-const Navbar = () => {
+// src/components/Navbar/Navbar.jsx
+import React from 'react';
+import './Navbar.css'; // Đảm bảo đường dẫn chính xác
+
+function Navbar() {
   return (
-    <div className="Navbar">
-      <div className="nav-left">
-        <img src={assets.logo} alt="" className='logo' />
-        <h1>FGZ</h1>
-      </div>
-    <nav className='nav-menu'>
+    <nav className="Navbar">
       <a href="/">Home</a>
       <a href="/catalogue">Catalogue</a>
-      <a href="/card">Card</a>
+      <a href="/cart">Cart</a>
     </nav>
-    <div className="nav-right">
-      asdf
-    </div>
-  </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

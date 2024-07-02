@@ -1,5 +1,6 @@
-// src/Home.js
+// src/Pages/Home/Home.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import { games } from '../../assets/games/game';
 import Header from '../../components/Header/Header';
@@ -7,7 +8,7 @@ import Header from '../../components/Header/Header';
 function Home() {
   return (
     <div className="Home">
-      <Header/>
+      <Header />
       <main>
         <section className="trending">
           <h2>Trending Now</h2>
@@ -18,6 +19,7 @@ function Home() {
                 <h3>{game.name}</h3>
                 <p>{game.price}</p>
                 <p>{game.genre}</p>
+                <Link to={`/product/${game.id}`}>View Details</Link> {/* Thêm liên kết */}
               </div>
             ))}
           </div>
@@ -31,12 +33,12 @@ function Home() {
                 <h3>{game.name}</h3>
                 <p>{game.price}</p>
                 <p>{game.genre}</p>
+                <Link to={`/product/${game.id}`}>View Details</Link> {/* Thêm liên kết */}
               </div>
             ))}
           </div>
         </section>
       </main>
-
     </div>
   );
 }
