@@ -1,8 +1,6 @@
 // src/components/Header/Header.jsx
 import React from 'react';
 import './Header.css';
-import headerImage from '../../assets/Carousel.webp'; // Cập nhật đường dẫn đúng
-
 function Header() {
   return (
     <div className="header">
@@ -13,7 +11,7 @@ function Header() {
     <button>Browse Now</button>
     </div>
     </div>
-  </div>
+  </div>)
 }
 
 export default Header;

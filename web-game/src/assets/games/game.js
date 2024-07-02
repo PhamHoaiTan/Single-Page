@@ -1,26 +1,4 @@
-<<<<<<< HEAD
-import game_1 from './Game 1.webp'
-import game_2 from './Game 2.webp'
-import game_3 from './Game 3.webp'
-import game_4 from './Game 4.webp'
-import game_5 from './Game 5.webp'
-import game_6 from './Game 6.webp'
-import game_7 from './Game 7.webp'
-import game_8 from './Game 8.webp'
-import game_9 from './Game 9.webp'
-import game_10 from './Game 10.webp'
-import game_11 from './Game 11.webp'
-import game_12 from './Game 12.webp'
 
-
-
-
-
-
-
-=======
-// src/assets/games/game.js
->>>>>>> 738e241f8cf28e3e70ef55d4cb9c74c01b75d3d8
 export const games = [
   {
     id: 1,
@@ -112,34 +90,6 @@ export const games = [
   },
   {
     id: 9,
-<<<<<<< HEAD
-    name: "Game 9",
-    image: game_9,
-    price: "$24.99",
-    genre: "Adventure / FPS"
-  },
-  {
-    id: 10,
-    name: "Game 10",
-    image: game_10,
-    price: "$39.99",
-    genre: "Br br / Skrt Skrt"
-  },
-  {
-    id: 11,
-    name: "Game 11",
-    image: game_11,
-    price: "$14.99",
-    genre: "Horror"
-  },
-  {
-    id: 12,
-    name: "Game 12",
-    image: game_12,
-    price: "$9.99",
-    genre: "Mother Russia"
-  }
-=======
     name: "Brave New World",
     price: "$24.99",
     genre: "Br / Br / Skrt Skrt",
@@ -182,5 +132,4 @@ export const games = [
     developer: "Ghost Games",
     publisher: "Horror Corp",
   },
->>>>>>> 738e241f8cf28e3e70ef55d4cb9c74c01b75d3d8
 ];
