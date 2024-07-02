@@ -1,13 +1,18 @@
-import React from 'react'
-import './Header.css'
-const Header = () => {
+// src/components/Header/Header.jsx
+import React from 'react';
+import './Header.css';
+import headerImage from '../../assets/Carousel.webp'; // Cập nhật đường dẫn đúng
+
+function Header() {
   return (
-    <div className="header">
-    <h2>Welcome to FGZ</h2>
-    <p>Browse our popular games here</p>
-    <button>Browse Now</button>
-  </div>
-  )
+    <header className="Header">
+      <img src={headerImage} alt="Header" />
+      <div className="header-content">
+        <h1>Welcome to FGZ</h1>
+        <a href="/catalogue">Browse Now</a>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

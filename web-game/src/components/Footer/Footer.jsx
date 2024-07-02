@@ -1,19 +1,21 @@
-import React from 'react'
-import './Footer.css'
-const Footer = () => {
+// src/components/Footer/Footer.jsx
+import React from 'react';
+import './Footer.css';
+
+function Footer() {
   return (
-    <footer>
-    <p>FGZ COMPANY, 2024, ALL RIGHT RESERVED</p>
-    <div className="social-media">
-      <a href="https://facebook.com">Facebook</a>
-      <a href="https://instagram.com">Instagram</a>
-      <a href="https://tiktok.com">TikTok</a>
-      <a href="https://youtube.com">YouTube</a>
-      <a href="https://telegram.org">Telegram</a>
-      <a href="https://linkedin.com">LinkedIn</a>
-    </div>
-  </footer>
-  )
+    <footer className="Footer">
+      <p>FGZ COMPANY, 2024, ALL RIGHT RESERVED</p>
+      <nav>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">YouTube</a>
+        <a href="#">Telegram</a>
+        <a href="#">LinkedIn</a>
+      </nav>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

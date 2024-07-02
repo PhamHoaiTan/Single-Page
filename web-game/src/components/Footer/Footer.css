@@ -1,5 +1,18 @@
-footer {
-    background-color: #282c34;
-    color: white;
-    padding: 10px;
-  }
+/* src/components/Footer/Footer.css */
+.Footer {
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.Footer a {
+  color: #FF4081;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}

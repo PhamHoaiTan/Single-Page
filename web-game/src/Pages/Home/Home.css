@@ -1,30 +1,46 @@
-/* src/Home.css */
-  
-  .trending, .flash-sales {
-    padding: 20px;
-  }
-  
-  .games {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .game {
-    text-align: center;
-    margin: 10px;
-    width: 20vw;
-    background-color: gray;
-    border-radius: 5px;
-  }
-  .game img{
-    width: 100%;
-  }
-  
-  
-  .social-media a {
-    margin: 0 10px;
-    color: white;
-    text-decoration: none;
-  }
-  
+/* Home.css */
+.Home {
+  padding: 20px;
+}
+
+.Home .trending, .Home .flash-sales {
+  margin-bottom: 40px;
+}
+
+.Home .trending .games, .Home .flash-sales .games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.Home .trending .game, .Home .flash-sales .game {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.Home .trending .game img, .Home .flash-sales .game img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Home .trending .game h3, .Home .flash-sales .game h3, 
+.Home .trending .game p, .Home .flash-sales .game p {
+  margin: 10px 0;
+}
+
+.Home .trending .game a, .Home .flash-sales .game a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #FF4081;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.Home .trending .game a:hover, .Home .flash-sales .game a:hover {
+  background-color: #FF80AB;
+}

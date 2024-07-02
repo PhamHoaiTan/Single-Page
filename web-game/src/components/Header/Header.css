@@ -1,6 +1,41 @@
-.header{
-    background: url('../../assets/Carousel.webp') no-repeat;
-    background-size: cover;
+/* src/components/Header/Header.css */
+.Header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .Header img {
     width: 100%;
-    height:34vw ;
-}
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .Header .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .Header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: #FF4081;
+  }
+  
+  .Header a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF4081;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .Header a:hover {
+    background-color: #FF80AB;
+  }
+  
