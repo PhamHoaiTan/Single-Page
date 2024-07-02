@@ -16,9 +16,12 @@ function ProductDetail() {
     <div className="ProductDetail">
       <h1>{product.name}</h1>
       <img src={product.image} alt={product.name} />
-      <p>Price: {product.price}</p>
-      <p>Genre: {product.genre}</p>
-      <p>Description: {product.description}</p>
+      <p><strong>Price:</strong> {product.price}</p>
+      <p><strong>Genre:</strong> {product.genre}</p>
+      <p><strong>Release Date:</strong> {product.releaseDate}</p>
+      <p><strong>Developer:</strong> {product.developer}</p>
+      <p><strong>Publisher:</strong> {product.publisher}</p>
+      <p><strong>Description:</strong> {product.description}</p>
     </div>
   );
 }

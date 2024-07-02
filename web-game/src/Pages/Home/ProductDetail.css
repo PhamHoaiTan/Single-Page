@@ -1,4 +1,4 @@
-/* ProductDetail.css */
+/* src/Pages/Home/ProductDetail.css */
 .ProductDetail {
     margin: auto;
     width: 80%;
@@ -6,6 +6,7 @@
     padding: 20px;
     background-color: #222;
     border-radius: 10px;
+    color: #FFF;
   }
   
   .ProductDetail img {
@@ -17,10 +18,12 @@
   
   .ProductDetail h1 {
     margin-bottom: 20px;
+    color: #FF4081;
   }
   
   .ProductDetail p {
     font-size: 18px;
     margin: 10px 0;
+    color: #FFF;
   }
   
