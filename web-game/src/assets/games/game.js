@@ -6,6 +6,11 @@ import game_5 from './Game 5.webp'
 import game_6 from './Game 6.webp'
 import game_7 from './Game 7.webp'
 import game_8 from './Game 8.webp'
+import game_9 from './Game 9.webp'
+import game_10 from './Game 10.webp'
+import game_11 from './Game 11.webp'
+import game_12 from './Game 12.webp'
+
 
 
 
@@ -70,31 +75,31 @@ export const games = [
     genre: "FPS / Bang Bang"
   },
   {
-    "id": 9,
-    "name": "Game 9",
-    "image": "path/to/Game 9.webp",
-    "price": "$24.99",
-    "genre": "Adventure / FPS"
+    id: 9,
+    name: "Game 9",
+    image: game_9,
+    price: "$24.99",
+    genre: "Adventure / FPS"
   },
   {
-    "id": 10,
-    "name": "Game 10",
-    "image": "path/to/Game 10.webp",
-    "price": "$39.99",
-    "genre": "Br br / Skrt Skrt"
+    id: 10,
+    name: "Game 10",
+    image: game_10,
+    price: "$39.99",
+    genre: "Br br / Skrt Skrt"
   },
   {
-    "id": 11,
-    "name": "Game 11",
-    "image": "path/to/Game 11.webp",
-    "price": "$14.99",
-    "genre": "Horror"
+    id: 11,
+    name: "Game 11",
+    image: game_11,
+    price: "$14.99",
+    genre: "Horror"
   },
   {
-    "id": 12,
-    "name": "Game 12",
-    "image": "path/to/Game 12.webp",
-    "price": "$9.99",
-    "genre": "Mother Russia"
+    id: 12,
+    name: "Game 12",
+    image: game_12,
+    price: "$9.99",
+    genre: "Mother Russia"
   }
 ];
