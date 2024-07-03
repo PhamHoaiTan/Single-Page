@@ -20,10 +20,11 @@ function Home() {
                 <p>{game.price}</p>
                 <p>{game.genre}</p>
                 </div>
-            </Link>
+                </Link> 
             ))}
-          </div>
+            </div>
         </section>
+
         <section className="flash-sales">
           <h2>Flash Sales</h2>
           <div className="games">
