@@ -8,11 +8,10 @@
 .Home .trending{
   margin: 40px auto;
 }
-.Home .trending, .Home .flash-sales {
+.Home .flash-sales {
   margin-bottom: 40px;
 }
-
-.Home .trending .games, .Home .flash-sales .games {
+.Home .flash-sales .games {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

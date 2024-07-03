@@ -13,13 +13,14 @@ function Home() {
           <h2>Trending Now</h2>
           <div className="games">
             {games.map((game) => (
+                <Link to={`/product/${game.id}`}>
               <div key={game.id} className="game">
                 <img src={game.image} alt={game.name} />
                 <h3>{game.name}</h3>
                 <p>{game.price}</p>
                 <p>{game.genre}</p>
-                <Link to={`/product/${game.id}`}>View Details</Link> {/* Thêm liên kết */}
-              </div>
+                </div>
+            </Link>
             ))}
           </div>
         </section>
