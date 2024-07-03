@@ -1,5 +1,5 @@
 .header{
-    margin-top: 10vh;
+    margin-top: 5%;
     position: relative;
     background: url('../../assets/Carousel.webp') no-repeat;
     background-size: cover;
@@ -10,7 +10,7 @@
 .header .header-text{
     color: #83f73f;
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 2vw;
     display: flex;
     flex-direction: column;
     gap: 15px;
