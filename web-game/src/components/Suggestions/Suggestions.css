@@ -1,0 +1,35 @@
+/* src/components/Suggestions/Suggestions.css */
+.Suggestions {
+    margin-top: 40px;
+  }
+  
+  .Suggestions h2 {
+    color: #FF4081;
+    margin-bottom: 20px;
+  }
+  
+  .suggested-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .suggested-game {
+    margin: 10px;
+    text-align: center;
+    flex: 0 1 calc(25% - 20px); /* Đặt kích thước của mỗi game card */
+    box-sizing: border-box;
+  }
+  
+  .suggested-game img {
+    width: 100px; /* Đặt kích thước ảnh nhỏ hơn */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .suggested-game .game-info {
+    margin-top: 10px;
+    font-size: 14px; /* Đặt kích thước chữ nhỏ hơn */
+    color: #FFF;
+  }
+  

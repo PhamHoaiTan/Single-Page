@@ -2,6 +2,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { games } from '../../assets/games/game';
+import Suggestions from '../../components/Suggestions/Suggestions';
 import './ProductDetail.css';
 
 function ProductDetail() {
@@ -22,6 +23,8 @@ function ProductDetail() {
       <p><strong>Developer:</strong> {product.developer}</p>
       <p><strong>Publisher:</strong> {product.publisher}</p>
       <p><strong>Description:</strong> {product.description}</p>
+
+      <Suggestions genre={product.genre} currentGameId={product.id} />
     </div>
   );
 }
