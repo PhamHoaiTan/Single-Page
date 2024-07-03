@@ -1,14 +1,23 @@
 // src/components/Navbar/Navbar.jsx
 import React from 'react';
-import './Navbar.css'; // Đảm bảo đường dẫn chính xác
+import './Navbar.css';
+import { assets } from '../../assets/assets';
 
 function Navbar() {
   return (
-    <nav className="Navbar">
-      <a href="/">Home</a>
+    <div className='navbar'>
+    <div className="nav-left">
+    <img src={assets.logo} alt="" className='logo'/>
+    <p>|</p>
+      <a href="/"><h2>STORE</h2></a>
       <a href="/catalogue">Catalogue</a>
       <a href="/cart">Cart</a>
-    </nav>
+    </div>
+    <div className='nav-right'>
+      <img src={assets.account} alt="" className='account-img' />
+      <button className='bt-download'>Download</button>
+    </div>
+    </div>
   );
 }
 
