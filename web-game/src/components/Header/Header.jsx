@@ -1,18 +1,17 @@
 // src/components/Header/Header.jsx
 import React from 'react';
 import './Header.css';
-import headerImage from '../../assets/Carousel.webp'; // Cập nhật đường dẫn đúng
-
 function Header() {
   return (
-    <header className="Header">
-      <img src={headerImage} alt="Header" />
-      <div className="header-content">
-        <h1>Welcome to FGZ</h1>
-        <a href="/catalogue">Browse Now</a>
-      </div>
-    </header>
-  );
+    <div className="header">
+    <div className="header-text">
+    <h2>Welcome to FGZ</h2>
+    <p>Browse our popular games here</p>
+    <div className="button">
+    <button>Browse Now</button>
+    </div>
+    </div>
+  </div>)
 }
 
 export default Header;

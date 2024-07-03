@@ -1,4 +1,4 @@
-// src/assets/games/game.js
+
 export const games = [
   {
     id: 1,
