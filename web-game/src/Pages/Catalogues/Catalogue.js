@@ -1,4 +1,3 @@
-// src/Pages/Catalogues/Catalogue.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Catalogue.css';

@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home';
 import Catalogue from './Pages/Catalogues/Catalogue';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import ProductDetail from './Pages/Home/ProductDetail';
+import ProductDetail from './Pages/Details/ProductDetail';
 
 function App() {
   return (
