@@ -3,7 +3,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { games } from '../../assets/games/game';
 import Suggestions from '../../components/Suggestions/Suggestions';
-// import './ProductDetail.css';
+import './ProductDetail.css';
 
 function ProductDetail() {
   const { id } = useParams();

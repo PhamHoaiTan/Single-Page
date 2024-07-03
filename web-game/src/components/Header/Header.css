@@ -8,16 +8,17 @@
     border-radius: 20px;
 }
 .header .header-text{
+    color: #83f73f;
     position: absolute;
     font-size: 1.8vw;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    top: 18vh;
-    left: 6vw;
+    gap: 15px;
+    top: 28%;
+    left: 10%;
     animation: FadeIn 3s;
 }
-.header-text button{
+.header-text .brow{
     padding: 0.7vw 2vw;
     border-radius: 15px;
     background-color: #F73F81;

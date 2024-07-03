@@ -4,30 +4,39 @@
   margin: 0 auto;
   padding: 20px;
 }
+.text{
+  width: 100%;
+  height: 300px;
+}
+.games {
+  display: grid;
+  grid-template-columns: repeat(30,minmax(170px,1fr));
+  gap: 20px;
+  overflow: hidden;
+}
 .Home .trending{
   margin: 40px auto;
 }
-.Home .flash-sales {
-  margin-bottom: 40px;
-}
-.Home .flash-sales .games {
+.trending-text{
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  gap: 80%;
+  align-items: center;
 }
-
+.Home h3{
+  margin: 20px auto;
+  text-decoration: underline;
+}
 .Home .trending .game, .Home .flash-sales .game {
-  background-color: #333;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  width: 200px;
+  background-color: #1E1E1E;
+  border-radius: 5px;
+  font-size: 0.8em;
+  width: 170px;
 }
 
 .Home .trending .game img, .Home .flash-sales .game img {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
+  height: 200px;
 }
 
 .Home .trending .game h3, .Home .flash-sales .game h3, 
@@ -35,15 +44,3 @@
   margin: 10px 0;
 }
 
-.Home .trending .game a, .Home .flash-sales .game a {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #FF4081;
-  color: #FFF;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.Home .trending .game a:hover, .Home .flash-sales .game a:hover {
-  background-color: #FF80AB;
-}
