@@ -9,7 +9,6 @@ function Home() {
   return (
     <div className="Home">
       <Header />
-      <main>
         <section className="trending">
           <h2>Trending Now</h2>
           <div className="games">
@@ -38,7 +37,6 @@ function Home() {
             ))}
           </div>
         </section>
-      </main>
     </div>
   );
 }

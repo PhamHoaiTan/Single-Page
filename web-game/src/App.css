@@ -9,8 +9,6 @@ body {
   padding: 0;
 }
 
-
-
 .header, .footer {
   background-color: #000;
   padding: 20px;
@@ -80,4 +78,15 @@ body {
 
 .game a:hover {
   background-color: #FF80AB;
+}
+
+
+/* Animation */
+@keyframes FadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100;
+  }
 }

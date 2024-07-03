@@ -9,15 +9,6 @@ function Catalogue() {
 
   return (
     <div className="Catalogue">
-      <header className="Catalogue-header">
-        <h1>FPT GAMING ZONE</h1>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/catalogue">Catalogue</a>
-        </nav>
-      </header>
-      <main>
-        <h2>Game Catalogue</h2>
         {genres.map((genre, index) => (
           <section key={index} className="genre-section">
             <h3>{genre}</h3>
@@ -33,7 +24,6 @@ function Catalogue() {
             </div>
           </section>
         ))}
-      </main>
     </div>
   );
 }
