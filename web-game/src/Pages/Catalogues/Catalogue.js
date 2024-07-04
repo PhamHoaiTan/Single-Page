@@ -13,12 +13,13 @@ function Catalogue() {
             <h3>{genre}</h3>
             <div className="games">
               {games.filter(game => game.genre === genre).map(filteredGame => (
+                  <Link to={`/product/${filteredGame.id}`}>
                 <div key={filteredGame.id} className="game">
                   <img src={filteredGame.image} alt={filteredGame.name} />
                   <h3>{filteredGame.name}</h3>
                   <p>{filteredGame.price}</p>
-                  <Link to={`/product/${filteredGame.id}`}>View Details</Link> {/* Thêm liên kết */}
                 </div>
+                  </Link> 
               ))}
             </div>
           </section>

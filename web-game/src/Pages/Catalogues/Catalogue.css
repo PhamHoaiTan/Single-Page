@@ -7,20 +7,6 @@
   margin-bottom: 40px;
 }
 
-.genre-section h3 {
-  border-bottom: 2px solid #FFF;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  color: #FF4081;
-}
-
-.genre-section .games {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
 .genre-section .game {
   background-color: #333;
   border-radius: 10px;
@@ -38,15 +24,4 @@
   margin: 10px 0;
 }
 
-.genre-section .game a {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #FF4081;
-  color: #FFF;
-  text-decoration: none;
-  border-radius: 5px;
-}
 
-.genre-section .game a:hover {
-  background-color: #FF80AB;
-}
