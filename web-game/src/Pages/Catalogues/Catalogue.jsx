@@ -5,7 +5,6 @@ import { games } from '../../assets/games/game';
 
 function Catalogue() {
   const genres = [...new Set(games.map(game => game.genre))];
-
   return (
     <div className="Catalogue">
         {genres.map((genre, index) => (
@@ -16,6 +15,7 @@ function Catalogue() {
                   <Link to={`/product/${filteredGame.id}`}>
                 <div key={filteredGame.id} className="game">
                   <img src={filteredGame.image} alt={filteredGame.name} />
+                  <p>Base game</p>
                   <h3>{filteredGame.name}</h3>
                   <p>{filteredGame.price}</p>
                 </div>

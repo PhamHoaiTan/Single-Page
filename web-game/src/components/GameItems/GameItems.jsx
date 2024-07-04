@@ -2,14 +2,18 @@ import React from 'react'
 import { games } from '../../assets/games/game'
 import { Link } from 'react-router-dom'
 import './GameItems.css'
+// import {AppProvider} from '../../'
 const GameItems = () => {
+  // const {Previous} = useContext(AppProvider)
+  const games = document.querySelectorAll('.game');
+  const width = games[0].offsetWidth;
+  const track = document.querySelector('text');
   return (
     <div>
         <section className="trending">
           <div className="title-pre-next">
           <h2 className='title'>Trending Now</h2>
           <div className="pre-next">
-            <p></p>
             <button className='pre'>&#8249;</button>
             <button className="next">&#8250;</button>
           </div>
