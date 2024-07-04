@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { games } from '../../assets/games/game'
 import { Link } from 'react-router-dom'
 import './GameItems.css'
-// import {AppProvider} from '../../'
+import { AppContext} from '../../ContextApp/ContextApp'
 const GameItems = () => {
-  // const {Previous} = useContext(AppProvider)
+  const {Previous} = useContext(AppContext);
+  
   const games = document.querySelectorAll('.game');
   const width = games[0].offsetWidth;
   const track = document.querySelector('text');
@@ -14,7 +15,7 @@ const GameItems = () => {
           <div className="title-pre-next">
           <h2 className='title'>Trending Now</h2>
           <div className="pre-next">
-            <button className='pre'>&#8249;</button>
+            <button className='pre' onClick={<Previous w={width} gs={track} />}>&#8249;</button>
             <button className="next">&#8250;</button>
           </div>
           </div>
