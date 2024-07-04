@@ -8,12 +8,7 @@
   width: 100%;
   height: 300px;
 }
-.trending-text{
-  display: flex;
-  gap: 80%;
-  align-items: center;
-}
-.Home .trending .game h3, .Home .flash-sales .game h3, 
-.Home .trending .game p, .Home .flash-sales .game p {
-  margin: 10px 0;
+.title{
+  margin: 20px auto;
+  font-size: 1.5em;
 }
