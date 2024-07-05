@@ -23,7 +23,7 @@ a{
   display: grid;
   grid-template-columns: repeat(30,minmax(270px,1fr));
   gap: 30px;
-  overflow: hidden;
+
 }
 .game img {
   border-radius: 5px;

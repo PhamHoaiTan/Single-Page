@@ -1,4 +1,12 @@
 /* GENE */
 .Gene{
     margin-top: 200px;
+    overflow: hidden;
+}
+.text{
+    width: 100%;
+    height: 100%;
+}
+.trending{
+    overflow: hidden;
 }
