@@ -1,14 +1,14 @@
-import { createContext, useRef, useState } from "react";
+// import { createContext, useRef, useState } from "react";
 
-export const AppContext = createContext({});
+// export const AppContext = createContext({});
 
-export const AppProvider = ({children}) =>{
+// export const AppProvider = ({children}) =>{
 
-    const[currentIndex,addCurrentIndex] = useState(0);
-    const AppValue = {
-        currentIndex,addCurrentIndex
-    }
-    return  <AppContext.Provider value={AppValue}>
-        {children}
-    </AppContext.Provider>
-}
+//     const[currentIndex,addCurrentIndex] = useState(0);
+//     const AppValue = {
+//         currentIndex,addCurrentIndex
+//     }
+//     return  <AppContext.Provider value={AppValue}>
+//         {children}
+//     </AppContext.Provider>
+// }

@@ -13,13 +13,11 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <AppProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
-      </AppProvider>
       <Footer />
     </div>
   );

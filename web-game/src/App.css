@@ -15,9 +15,6 @@ a{
   text-decoration: none;
 }
 
-.header nav a:hover, .footer nav a:hover {
-  text-decoration: underline;
-}
 /* Set all Game in App */
 .games {
   display: grid;
@@ -38,23 +35,20 @@ a{
 /* Previous-Next,Title */
 
 .title-pre-next{
+  margin-bottom: 10px ;
   display: flex;
-  gap: 85%;
+  justify-content: space-between;
   align-items: center;
 }
 .pre-next button{
-  padding: 8px;
+  padding: 10px;
   border-radius: 50%;
   border: none;
-  margin-right: 5px;
-  font-size: 20px;
+  font-size: 25px;
   background-color: black;
   color: white;
   align-items: center;
   cursor: pointer;
-}
-.pre-next{
-  gap: 20px;
 }
 
 
