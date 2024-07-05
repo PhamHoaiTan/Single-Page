@@ -2,7 +2,7 @@
 import React from 'react';
 import './Home.css';
 import Header from '../../components/Header/Header';
-import GameItems from '.. /../components/GameItems/GameItems';
+import GameItems from '../../components/GameItems/GameItems';
 
 function Home() {
   return (

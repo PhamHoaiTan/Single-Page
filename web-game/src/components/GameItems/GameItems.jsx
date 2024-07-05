@@ -4,26 +4,23 @@ import { Link } from 'react-router-dom'
 import './GameItems.css'
 import { AppContext} from '../../ContextApp/ContextApp'
 const GameItems = () => {
-  const {Previous} = useContext(AppContext);
-  
-  // const games = document.querySelectorAll('.game');
-  // const width = games[0].offsetWidth;
-  // const track = document.querySelector('text');
+const {Previous,myDivRef,track,itemWidth} = useContext(AppContext);
+console.log(itemWidth)
   return (
     <div>
         <section className="trending">
           <div className="title-pre-next">
           <h2 className='title'>Trending Now</h2>
           <div className="pre-next">
-            <button className='pre'>&#8249;</button>
-            <button className="next">&#8250;</button>
+            <button className='pre' >&#8249;</button>
+            <button className="next" onClick={Previous(itemWidth,track)}>&#8250;</button>
           </div>
           </div>
           <div className="text">
           <div className="games">
             {games.map((game) => (
               <Link to={`/product/${game.id}`}>
-              <div key={game.id} className="game">
+              <div ref={myDivRef} key={game.id} className="game">
                 <img src={game.image} alt={game.name} />
                 <p>Base game</p>
                 <h4>{game.name}</h4>

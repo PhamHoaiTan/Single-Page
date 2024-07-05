@@ -1,17 +1,20 @@
-import { createContext, useState } from "react";
+import { createContext, useRef, useState } from "react";
 
 export const AppContext = createContext({});
 
 export const AppProvider = ({children}) =>{
-    
+    const myDivRef = useRef(200);
+
     const[currentIndex,addCurrentIndex] = useState(0);
-    
-    const Previous = ({w,gs}) =>{
+    const itemWidth = myDivRef.current.offsetWidth +20;
+    const track = document.querySelector('.text');
+    const Next = ({width,track}) =>{
         addCurrentIndex(currentIndex++);
-        gs.style.transform = `tranlateX(-${currentIndex * 4 * w})`
+        track.style.transform = `tranlateX(-${currentIndex * 4 * width})`
+        console.log(addCurrentIndex)
     }
     const AppValue = {
-        Previous
+       Next,itemWidth,track 
     }
     return  <AppContext.Provider value={AppValue}>
         {children}
