@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { games } from '../../assets/games/game';
+import { games } from '../../../assets/games/game';
 import { Link } from 'react-router-dom';
 
 const Trending = () => {
