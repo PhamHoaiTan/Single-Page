@@ -15,7 +15,11 @@ function ProductDetail() {
 
   return (
     <div className="ProductDetail">
+      <div className="name">
       <h1>{product.name}</h1>
+      </div> 
+      <div className="details-content">
+
       <img src={product.image} alt={product.name} />
       <p><strong>Price:</strong> {product.price}</p>
       <p><strong>Genre:</strong> {product.genre}</p>
@@ -23,7 +27,7 @@ function ProductDetail() {
       <p><strong>Developer:</strong> {product.developer}</p>
       <p><strong>Publisher:</strong> {product.publisher}</p>
       <p><strong>Description:</strong> {product.description}</p>
-
+      </div>
       <Suggestions genre={product.genre} currentGameId={product.id} />
     </div>
   );
