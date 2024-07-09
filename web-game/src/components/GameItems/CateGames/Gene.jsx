@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { games } from '../../../assets/games/game'
 import { Link } from 'react-router-dom'
-
+import { games } from '../../../assets/games/game';
+import { gamesdiscount } from '../../../assets/games/game';
 const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +32,7 @@ const Gene = () => {
   return (
     <div className="Gene">
     <div className="title-pre-next">
-      <h2>Gene</h2>
+      <h2>Flash Sales</h2>
       <div className="pre-next">
         <button className='pre' onClick={handlePrev} >&#8249;</button>
         <button className="next" onClick={handleNext} >&#8250;</button>
@@ -40,7 +40,7 @@ const Gene = () => {
       </div>
     <div className="text"  ref={myDivRef}>
       <div className="games">
-        {games.map((game) => (
+        {gamesdiscount.map((game) => (
             <Link to={`/product/${game.id}`}>
           <div key={game.id} className="game">
             <img src={game.image} alt={game.name} />

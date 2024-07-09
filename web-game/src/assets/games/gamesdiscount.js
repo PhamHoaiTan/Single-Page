@@ -36,5 +36,5 @@ const gamesdiscount = [
     },
   ];
   
-  export default gamesdiscount;
+  export  {gamesdiscount};
   
