@@ -11,9 +11,7 @@ import game_9 from './Game 9.webp'
 import game_10 from './Game 10.webp'
 import game_11 from './Game 11.webp'
 import game_12 from './Game 12.webp'
-import game_16 from './Game 16.webp'
-import game_17 from './Game 17.webp'
-import game_18 from './Game 18.webp'
+
 
 
 
@@ -153,5 +151,6 @@ const games = [
     publisher: "Horror Corp",
   }
 ];
+
 
 export { games };

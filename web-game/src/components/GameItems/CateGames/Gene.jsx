@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { games } from '../../../assets/games/game';
-import { gamesdiscount } from '../../../assets/games/game';
+import { gamesdiscount } from '../../../assets/games/gamesdiscount';
 const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);

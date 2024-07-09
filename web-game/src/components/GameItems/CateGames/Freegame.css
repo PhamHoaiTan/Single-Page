@@ -1,0 +1,22 @@
+.flash-sales{
+    margin-top: 40px;
+}
+.free-games{
+    justify-content: space-between; 
+    background-color: gray;
+    padding: 20px 20px;
+    margin: 10px 100px;
+}
+.flash-sales{
+    background-color: gray;
+    border-radius: 5px;
+}
+.games-items{
+    display: flex;
+    justify-content: space-between; 
+
+}
+.games-items .game img{
+    width: 600px;
+    height: 350px;
+}

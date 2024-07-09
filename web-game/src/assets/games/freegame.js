@@ -3,7 +3,7 @@ import game_14 from './Game 14.webp'
 import game_15 from './Game 15.webp'
 const freegame = [
     {
-      id: 13,
+      id: 1,
       name: "Mystery Island",
       price: "Free",
       genre: "Adventure / FPS",
@@ -14,7 +14,7 @@ const freegame = [
       publisher: "Adventure Studios",
     },
     {
-      id: 14,
+      id: 2,
       name: "Treasure Hunt",
       price: "Free",
       genre: "Adventure / FPS",
@@ -25,7 +25,7 @@ const freegame = [
       publisher: "Treasure Inc",
     },
     {
-      id: 15,
+      id: 3,
       name: "Jungle Survivor",
       price: "Free",
       genre: "Adventure / FPS",
