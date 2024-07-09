@@ -1,10 +1,12 @@
 .flash-sales{
     margin-top: 40px;
+    width: 100%;
+    height: 50%;
 }
 .free-games{
     justify-content: space-between; 
     background-color: gray;
-    padding: 20px 20px;
+    padding: 40px 10px;
     margin: 10px 100px;
 }
 .flash-sales{
@@ -12,11 +14,12 @@
     border-radius: 5px;
 }
 .games-items{
-    display: flex;
-    justify-content: space-between; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 
 }
 .games-items .game img{
-    width: 600px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
 }
