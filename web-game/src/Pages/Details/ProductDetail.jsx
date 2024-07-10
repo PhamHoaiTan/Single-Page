@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { games } from '../../assets/games/game';
 import Suggestions from '../../components/Suggestions/Suggestions';
 import './ProductDetail.css';
+import Requirements from '../../components/Details/Requirements';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -42,13 +43,12 @@ function ProductDetail() {
           if(crollY < widthContain && crollY < topSuggest - nice){
             detailRightid.style.position = 'fixed';
             detailRightid.style.top = '20%';
-          }else if(crollY > topSuggest-nice){
+          }else if(crollY >= topSuggest-nice){
             detailRightid.style.position = 'absolute';
             detailRightid.style.top = `${topSuggest-nice}px`;
           }
           else{
             detailRightid.style.position = 'absolute';
-              
           }
   })
 
@@ -75,8 +75,10 @@ function ProductDetail() {
       <p><strong>Publisher:</strong> {product.publisher}</p>
       </div>
       </div>
+
       <div className="suggestion" ref={suggestion}>
-      <Suggestions genre={product.genre} currentGameId={product.id} />
+          <Requirements product={product}/>
+          <Suggestions genre={product.genre} currentGameId={product.id} />
       </div>
     </div>
   );
