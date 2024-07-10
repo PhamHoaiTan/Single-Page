@@ -30,7 +30,6 @@
   }
   .details-content{
     display: grid;
-    position: relative;
     grid-template-columns: 80% 20%;
     height: 80vh;
   }
@@ -55,11 +54,12 @@
   /* Right Details */
   .detail-right{
     width: 15vw;
+    position: absolute;
     display: flex;
-    position: fixed;
     flex-direction: column;
     gap: 1px;
-    left: 80%;
+    top: 20%;
+    left: 75%;
   }
   .detail-bt button{
       width: 100%;
@@ -68,17 +68,17 @@
       font-size: 1em;
       border-radius: 5px;
       cursor: pointer;
+      color: #F5F5F5;
   }
   .detail-bt .buyNow{
-    background-color: #F1B22C;
+    background-color: #3875E3;
     border: none;
   }
   .detail-bt .buyNow:hover{
-    background-color: #CA9625;
+    background-color: #488BE8;
   }
   .detail-bt .addToCard{
     background-color: #121212;
-    color: #F5F5F5;
     border: white 1px solid;
   }
   .detail-bt .addToCard:hover {

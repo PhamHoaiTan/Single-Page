@@ -4,14 +4,13 @@
   }
   
   .Suggestions h2 {
-    color: #FF4081;
+    color: #FFF;
     margin-bottom: 20px;
   }
   
   .suggested-games {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   
   .suggested-game {

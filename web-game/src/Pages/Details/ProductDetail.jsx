@@ -1,5 +1,5 @@
 // src/Pages/Home/ProductDetail.js
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { games } from '../../assets/games/game';
 import Suggestions from '../../components/Suggestions/Suggestions';
@@ -9,22 +9,61 @@ function ProductDetail() {
   const { id } = useParams();
   const product = games.find(game => game.id === parseInt(id));
 
+  const detailContain = useRef(null);
+  const detailRight = useRef(null);
+  const suggestion = useRef(null);
+  
+  const [widthContain,setWidthContain] = useState(0);
+  const [topSuggest,setTopSuggest] = useState(0);
+  const [nice,setHeightDetailRight] = useState(0);
+  
+  useEffect(()=>{
+    setWidthContain(detailContain.current.offsetHeight);
+    console.log(topSuggest);
+  },[]);
+
+  useEffect(()=>{
+    setHeightDetailRight(detailRight.current.offsetHeight);
+  },[]);
+  
+  useEffect(()=>{
+    setTopSuggest(suggestion.current.offsetTop);
+  },[]);
+  
   if (!product) {
     return <div>Product not found</div>;
   }
+  
+
+  // scroll
+  window.addEventListener('scroll',()=>{
+        const detailRightid = document.getElementById('detailRight');
+        const crollY = window.scrollY;
+          if(crollY < widthContain && crollY < topSuggest - nice){
+            detailRightid.style.position = 'fixed';
+            detailRightid.style.top = '20%';
+          }else if(crollY > topSuggest-nice){
+            detailRightid.style.position = 'absolute';
+            detailRightid.style.top = `${topSuggest-nice}px`;
+          }
+          else{
+            detailRightid.style.position = 'absolute';
+              
+          }
+  })
 
   return (
     <div className="ProductDetail">
       <div className="name"><h1 className='deltail-h1'>{product.name}</h1></div> 
-      <div className="details-content">
+      <div className="details-content" ref={detailContain}>
         {/* Detail Left */}
         <div className="detail-left">
-      <img src={product.image} alt={product.name} />
+      <img src={product.image} alt={product.name}  />
       <div className="detail-description"><p>{product.description}</p></div>
       <p><span className='genres'>Genres:</span><br /> {product.genre}</p>
         </div>
         {/* Detail Right */}
-      <div className="detail-right">
+      <div className="detail-right" id='detailRight' ref={detailRight}>
       <div  className='base-game'><p>Base Game</p></div>
       <p>{product.price}</p>
       <div className="detail-bt">
@@ -36,7 +75,7 @@ function ProductDetail() {
       <p><strong>Publisher:</strong> {product.publisher}</p>
       </div>
       </div>
-      <div className="suggestion">
+      <div className="suggestion" ref={suggestion}>
       <Suggestions genre={product.genre} currentGameId={product.id} />
       </div>
     </div>
