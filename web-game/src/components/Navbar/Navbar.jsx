@@ -11,9 +11,9 @@ function Navbar() {
     <p>|</p>
       <a href="/"><h2>STORE</h2></a>
       <a href="/catalogue">Catalogue</a>
-      <a href="/cart">Cart</a>
     </div>
     <div className='nav-right'>
+      <a href="/cart"><img src={assets.cart} alt="" className='cart'/></a>
       <img src={assets.account} alt="" className='account-img' />
       <button className='bt-download'>Download</button>
     </div>

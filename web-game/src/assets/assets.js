@@ -5,6 +5,10 @@ import ins from './ins.png'
 import telegram from './telegram.png'
 import tiktok from './tiktok.png'
 import youtube from './youtube.png'
+import gift from './gift.png'
+import cart from './cart.png'
+import add_icon from './add_icon.png'
+import plus from './plus.png'
 export const assets = {
     logo,
     account,
@@ -12,5 +16,9 @@ export const assets = {
     ins,
     telegram,
     tiktok,
-    youtube
+    youtube,
+    gift,
+    cart,
+    add_icon,
+    plus
 }

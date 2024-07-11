@@ -38,3 +38,10 @@
   margin-right: 20px;
   cursor: pointer;
 }
+.cart{
+  width: 2svw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #333333;
+  object-fit: cover;
+}

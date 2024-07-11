@@ -12,3 +12,28 @@
     overflow: hidden;
     margin: 40px auto;
 }
+
+
+/* Add icon */
+.add-icon{
+    position: absolute;
+    background-color: aliceblue;
+    width: 45px;
+    height: 45px;
+    top:2%;
+    right: 2%;
+    border-radius: 50%;
+    display: none;
+}
+.add-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.add-icon img:hover {
+    display: block;
+}
+
+.game-img{
+    position: relative;
+}

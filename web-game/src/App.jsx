@@ -7,7 +7,7 @@ import Catalogue from './Pages/Catalogues/Catalogue';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import ProductDetail from './Pages/Details/ProductDetail';
-import { AppProvider } from './ContextApp/ContextApp';
+import AddToCart from './Pages/Card/AddToCart';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path='/cart' element={<AddToCart/>}/>
       </Routes>
       <Footer />
     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { games } from '../../../assets/games/game';
 import { Link } from 'react-router-dom';
+import { assets } from '../../../assets/assets';
 
 const Trending = () => {
     const myDivRef = useRef(null);
@@ -43,7 +44,12 @@ const Trending = () => {
       {games.map((game) => (
         <Link to={`/product/${game.id}`}>
         <div key={game.id} className="game">
+          <div className="game-img">
           <img src={game.image} alt={game.name} />
+          <div className="add-icon">
+            <img src={assets.plus} alt=""/>
+            </div>
+          </div>
           <p>Base game</p>
           <h4>{game.name}</h4>
           <p>{game.price}</p>
