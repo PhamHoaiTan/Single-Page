@@ -35,8 +35,8 @@ const Trending = () => {
     <div className="title-pre-next">
     <h2>Trending Now</h2>
     <div className="pre-next">
-      <button className='pre' onClick={handlePrev}>&#8249;</button>
-      <button className="next" onClick={handleNext} >&#8250;</button>
+      <button className='pre' onClick={handlePrev}><p>&#8249;</p></button>
+      <button className="next" onClick={handleNext} ><p>&#8250;</p></button>
     </div>
     </div>
     <div className="text"  ref={myDivRef}>

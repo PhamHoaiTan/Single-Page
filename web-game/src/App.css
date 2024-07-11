@@ -31,7 +31,6 @@ a{
   margin: 10px 0;
 }
 
-
 /* Previous-Next,Title */
 
 .title-pre-next{
@@ -40,15 +39,22 @@ a{
   justify-content: space-between;
   align-items: center;
 }
+.pre-next{
+  display: flex;
+  gap:5px;
+}
 .pre-next button{
-  padding: 10px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   font-size: 25px;
   background-color: black;
   color: white;
-  align-items: center;
   cursor: pointer;
+}
+.pre-next button:hover{
+  background-color: gray;
 }
 
 

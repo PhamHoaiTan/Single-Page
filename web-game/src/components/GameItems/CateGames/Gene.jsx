@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gamesdiscount } from '../../../assets/games/gamesdiscount';
+import { assets } from '../../../assets/assets';
 const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +43,12 @@ const Gene = () => {
         {gamesdiscount.map((game) => (
             <Link to={`/product/${game.id}`}>
           <div key={game.id} className="game">
+            <div className="game-img">
             <img src={game.image} alt={game.name} />
+            <div className="add-icon">
+                <img src={assets.plus} alt=""/>
+            </div>
+          </div>
             <p>Base game</p>
             <h3>{game.name}</h3>
             <p>{game.price}</p>
