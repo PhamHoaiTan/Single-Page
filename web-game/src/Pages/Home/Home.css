@@ -5,10 +5,20 @@
     padding: 20px;
   }
   .text{
-    width: 500px;
-    height: 300px;
+    overflow-x: scroll;
+    overflow-x: hidden;
   }
   .title{
     margin: 20px auto;
     font-size: 1.5em;
   }
+  @media screen and (max-width:600px) {
+    .Home{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .text{
+      overflow: auto;
+    }
+}

@@ -3,7 +3,6 @@ import React from 'react';
 import './Header.css';
 import { Link, useNavigate } from 'react-router-dom';
 function Header() {
-  const navigate = useNavigate();
   return (
     <div className="header">
     <div className="header-text">
