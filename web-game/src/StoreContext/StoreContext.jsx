@@ -4,7 +4,7 @@ import freegame from "../assets/games/freegame";
 import { gamesdiscount } from "../assets/games/gamesdiscount";
 export const StoreContext = createContext(null);
 
-export const StoreContextProvider = ({props}) =>{
+export const StoreContextProvider = (props) =>{
     
   
     const contextValue = {
@@ -12,7 +12,7 @@ export const StoreContextProvider = ({props}) =>{
             freegame,
             gamesdiscount
     }
-    return  <StoreContext.Provider value={contextValue}>
+    return  (<StoreContext.Provider value={contextValue}>
         {props.children}
-    </StoreContext.Provider>
+    </StoreContext.Provider>);
 }
