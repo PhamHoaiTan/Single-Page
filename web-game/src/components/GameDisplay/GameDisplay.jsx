@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './GameDisplay.css'
-import { StoreContext } from '../StoreContext/StoreContext'
+import { StoreContext } from '../../StoreContext/StoreContext'
 const GameDisplay = () => {
     const {games} = useContext(StoreContext)
   return (
