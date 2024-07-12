@@ -43,8 +43,8 @@ const Trending = () => {
         <div key={game.id} className="game">
           <div className="game-img">
           <div className="add-icon">
-          {!currentIndex?<img src={assets.plus} onClick={prev=>setItemCount(prev+1)} alt=""/>
-            :<></>
+          {!itemCount?<img src={assets.plus} onClick={()=>setItemCount(prev=>prev+1)} alt=""/>
+            :<img src={assets.tick} alt=''/>
           }</div>
           <img src={game.image} alt={game.name} />
           </div>
