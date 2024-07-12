@@ -2,13 +2,14 @@
 import React from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
+import { Link } from 'react-router-dom';
 
 function Navbar({setShowLogin}) {
   return (
     <div className='navbar'>
     <div className="nav-left">
-    <img src={assets.logo} alt="" className='logo'/>
-    <p>|</p>
+    <Link to={'/'}><img src={assets.logo} alt="" className='logo'/></Link>
+    <p className='line'>|</p>
       <a href="/"><h2>STORE</h2></a>
       <a href="/catalogue">Catalogue</a>
     </div>

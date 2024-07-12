@@ -11,6 +11,7 @@ import add_icon from './add_icon.png'
 import plus from './plus.png'
 import cross_icon from './cross_icon.png'
 import tick from './tick.png'
+import carousel from './Carousel.webp'
 export const assets = {
     logo,
     account,
@@ -24,5 +25,6 @@ export const assets = {
     add_icon,
     plus,
     cross_icon,
-    tick
+    tick,
+    carousel
 }
