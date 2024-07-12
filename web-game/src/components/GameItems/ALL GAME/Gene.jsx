@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { gamesdiscount } from '../../../assets/games/gamesdiscount';
 import { assets } from '../../../assets/assets';
+import GameItem from '../../GameItem/GameItem';
 const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,6 @@ const Gene = () => {
         setCurrentIndex(currentIndex - 1);
       }
     };
-  
     useEffect(() => {
       myDivRef.current.style.transform = `translateX(-${currentIndex * 4 * itemWidth}px)`;
     }, [currentIndex, itemWidth]);
@@ -36,22 +36,16 @@ const Gene = () => {
       </div>
     <div className="text"  ref={myDivRef}>
       <div className="games">
-        {gamesdiscount.map((game) => (
-            <Link to={`/product/${game.id}`}>
-          <div key={game.id} className="game">
-            <div className="game-img">
-            <img src={game.image} alt={game.name} />
-            <div className="add-icon">
-                <img src={assets.plus} alt=""/>
-            </div>
-          </div>
-            <p>Base game</p>
-            <h3>{game.name}</h3>
-            <p>{game.price}</p>
-            <p>{game.genre}</p>
-          </div>
-            </Link>
-        ))}
+      {gamesdiscount.map((item,index) => {return(
+            <GameItem 
+            key={index}
+            id={item.id}
+            name={item.name}
+            image={item.image}
+            genre={item.genre}
+            price={item.price}  
+            />
+      )})}
       </div>
       </div>
     </div>

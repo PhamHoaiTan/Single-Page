@@ -2,6 +2,7 @@ import React from 'react'
 import freegame from '../../../assets/games/freegame'
 import './Freegame.css'
 import { assets } from '../../../assets/assets'
+import { Link } from 'react-router-dom'
 const Freegame = () => {
   return (
     <div className="flash-sales">
@@ -16,9 +17,12 @@ const Freegame = () => {
     <div className="games-items">
     {    
         freegame.slice(0,2).map(game => (
-                <div className="game">
+          <div className="game">
+
+                  <Link to={`/product/${game.id}`} >
                 <img src={game.image} alt="" />
                 <p>{game.name}</p>
+                  </Link>
             </div>
         ))
     }

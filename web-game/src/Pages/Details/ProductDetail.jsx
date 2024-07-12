@@ -5,10 +5,12 @@ import { games } from '../../assets/games/game';
 import Suggestions from '../../components/Suggestions/Suggestions';
 import './ProductDetail.css';
 import Requirements from '../../components/Details/Requirements';
+import { gamesdiscount } from '../../assets/games/gamesdiscount';
+import freegame from '../../assets/games/freegame';
 
 function ProductDetail() {
   const { id } = useParams();
-  const product = games.find(game => game.id === parseInt(id));
+  const product = games.find(game => game.id === parseInt(id))||gamesdiscount.find(game => game.id === parseInt(id))||freegame.find(game => game.id === parseInt(id));
 
   const detailContain = useRef(null);
   const detailRight = useRef(null);

@@ -16,17 +16,23 @@ a{
 
 /* Set all Game in App */
 .games {
-  display: grid;
-  grid-template-columns: repeat(30,minmax(270px,1fr));
-  gap: 30px;
-  
+  display: flex;
+  flex: 0 0 auto;
+  gap: 50px;
+  box-sizing: border-box;
 }
+.games{
+  width: 250px;
+  height:500px;
+}
+
 .game img {
   border-radius: 5px;
   width: 100%;
   height: 270px;
 
 }
+
 .game h3, .game p {
   margin: 10px 0;
 }
