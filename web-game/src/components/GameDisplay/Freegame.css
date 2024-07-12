@@ -1,0 +1,47 @@
+.flash-sales{
+    margin-top: 40px;
+    width: 100%;
+    height: 50%;
+}
+.free-games{
+    justify-content: space-between; 
+    background-color: #2A2A2A;
+    margin: 10px 100px;
+    padding-bottom: 80px;
+}
+.flash-sales{
+    background-color: #2A2A2A;
+    border-radius: 5px;
+}
+.games-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.games-items .game img{
+    width: 100%;
+    height: 100%;
+}
+ .game img:hover +.add-icon{
+    display: block;
+}
+.free-games img{
+    width: 5vw;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.free-game-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.free-game-header button{
+    width: 120px;
+    padding: 10px 0;
+    color: white;
+    border: 1px solid white;
+    background-color: #2A2A2A;
+}
