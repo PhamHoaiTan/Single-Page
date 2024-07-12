@@ -1,7 +1,7 @@
 import './GameItems.css'
-import Trending from './CateGames/Trending'
-import Gene from './CateGames/Gene'
-import Freegame from './CateGames/Freegame'
+import Trending from './ALL GAME/Trending'
+import Gene from './ALL GAME/Gene'
+import Freegame from './ALL GAME/Freegame'
 const GameItems = () => {
   
   return (

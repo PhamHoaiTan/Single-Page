@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { games } from '../../assets/games/game';
-import { Link } from 'react-router-dom';
-import { assets } from '../../assets/assets';
-
-const Trending = () => {
+import { Link } from 'react-router-dom'
+import { gamesdiscount } from '../../../assets/games/gamesdiscount';
+import { assets } from '../../../assets/assets';
+const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemWidth, setItemWidth] = useState(0);
@@ -31,36 +30,36 @@ const Trending = () => {
       myDivRef.current.style.transform = `translateX(-${currentIndex * 4 * itemWidth}px)`;
     }, [currentIndex, itemWidth]);
   return (
-    <section className="trending">
+    <div className="Gene">
     <div className="title-pre-next">
-    <h2>Trending Now</h2>
-    <div className="pre-next">
-      <button className='pre' onClick={handlePrev}><p>&#8249;</p></button>
-      <button className="next" onClick={handleNext} ><p>&#8250;</p></button>
-    </div>
-    </div>
+      <h2>Flash Sales</h2>
+      <div className="pre-next">
+        <button className='pre' onClick={handlePrev} >&#8249;</button>
+        <button className="next" onClick={handleNext} >&#8250;</button>
+      </div>
+      </div>
     <div className="text"  ref={myDivRef}>
-    <div className="games">
-      {games.map((game) => (
-        <Link to={`/product/${game.id}`}>
-        <div key={game.id} className="game">
-          <div className="game-img">
-          <img src={game.image} alt={game.name} />
-          <div className="add-icon">
-            <img src={assets.plus} alt=""/>
+      <div className="games">
+        {gamesdiscount.map((game) => (
+            <Link to={`/product/${game.id}`}>
+          <div key={game.id} className="game">
+            <div className="game-img">
+            <img src={game.image} alt={game.name} />
+            <div className="add-icon">
+                <img src={assets.plus} alt=""/>
             </div>
           </div>
-          <p>Base game</p>
-          <h4>{game.name}</h4>
-          <p>{game.price}</p>
-          <p>{game.genre}</p>
+            <p>Base game</p>
+            <h3>{game.name}</h3>
+            <p>{game.price}</p>
+            <p>{game.genre}</p>
           </div>
-          </Link> 
-      ))}
+            </Link>
+        ))}
       </div>
       </div>
-  </section>
+    </div>
   )
 }
 
-export default Trending
+export default Gene
