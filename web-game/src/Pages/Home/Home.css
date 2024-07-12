@@ -1,14 +1,14 @@
 /* Home.css */
 .Home {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-.text{
-  width: 100%;
-  height: 300px;
-}
-.title{
-  margin: 20px auto;
-  font-size: 1.5em;
-}
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .text{
+    width: 100%;
+    height: 300px;
+  }
+  .title{
+    margin: 20px auto;
+    font-size: 1.5em;
+  }

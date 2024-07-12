@@ -1,7 +1,7 @@
 import React from 'react'
-import freegame from '../../../assets/games/freegame'
+import freegame from '../../assets/games/freegame'
 import './Freegame.css'
-import { assets } from '../../../assets/assets'
+import { assets } from '../../assets/assets'
 const Freegame = () => {
   return (
     <div className="flash-sales">
