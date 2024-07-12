@@ -2,7 +2,6 @@
 
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #121212;
   color: #FFF;
   margin: 0;
@@ -20,12 +19,13 @@ a{
   display: grid;
   grid-template-columns: repeat(30,minmax(270px,1fr));
   gap: 30px;
-
+  
 }
 .game img {
   border-radius: 5px;
   width: 100%;
   height: 270px;
+
 }
 .game h3, .game p {
   margin: 10px 0;

@@ -10,6 +10,7 @@ import cart from './cart.png'
 import add_icon from './add_icon.png'
 import plus from './plus.png'
 import cross_icon from './cross_icon.png'
+import tick from './tick.png'
 export const assets = {
     logo,
     account,
@@ -22,5 +23,6 @@ export const assets = {
     cart,
     add_icon,
     plus,
-    cross_icon
+    cross_icon,
+    tick
 }

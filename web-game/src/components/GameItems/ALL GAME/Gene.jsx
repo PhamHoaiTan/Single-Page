@@ -6,20 +6,16 @@ const Gene = () => {
     const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemWidth, setItemWidth] = useState(0);
-    console.log(currentIndex,setItemWidth);
-  
+
     useEffect(() => {
       const items = document.querySelectorAll('.game');
       if (items.length > 0) {
         setItemWidth(items[0].offsetWidth + 60); 
       }
     }, []);
-    
-  
     const handleNext = () => {
         setCurrentIndex(currentIndex + 1);
     };
-  
     const handlePrev = () => {
       if (currentIndex > 0) {
         setCurrentIndex(currentIndex - 1);
