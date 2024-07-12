@@ -3,7 +3,7 @@ import React from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 
-function Navbar() {
+function Navbar({setShowLogin}) {
   return (
     <div className='navbar'>
     <div className="nav-left">
@@ -14,7 +14,7 @@ function Navbar() {
     </div>
     <div className='nav-right'>
       <a href="/cart"><img src={assets.cart} alt="" className='cart'/></a>
-      <img src={assets.account} alt="" className='account-img' />
+      <img src={assets.account} alt="" className='account-img' onClick={()=>setShowLogin(true)} />
       <button className='bt-download'>Download</button>
     </div>
     </div>

@@ -5,7 +5,7 @@
   justify-content: space-between;
   background-color: #18181C;
   align-items: center;
-  z-index: 100;
+  z-index: 1;
   margin-top: 0;
   top: 0;
 }
@@ -29,6 +29,7 @@
 .account-img{
   width: 3vw;
   border-radius: 50%;
+  cursor: pointer;
 }
 .bt-download{
   padding: 6px 15px;
