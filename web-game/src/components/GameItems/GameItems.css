@@ -2,12 +2,7 @@
 .Gene{
     overflow: hidden;
 }
-.text{
-    width: 100%;
-    height: 100%;
-    animation: FadeIn 3s;
-    transition: transform 0.5s ease-in-out;
-}
+
 .trending{
     overflow: hidden;
     margin: 40px auto;

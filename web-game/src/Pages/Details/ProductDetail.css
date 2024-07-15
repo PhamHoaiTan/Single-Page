@@ -54,7 +54,6 @@
   /* Right Details */
   .detail-right{
     width: 15vw;
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 1px;
@@ -84,9 +83,6 @@
   .detail-bt .addToCard:hover {
     background-color: #868686;
   }
-  .suggestion{
-    position: relative;
-  }
   table{
     width: 100%;
     column-gap: 40px;
@@ -100,10 +96,24 @@
 
 @media  screen and (max-width:600px) {
   .detail-right{
-    position: relative;
+    width: 100%;
   }
   .details-content{
     display: flex;
     flex-direction: column;
+  }
+  
+  .deltail-h1{
+    font-size: 2em;
+  }
+  .ProductDetail{
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .suggestion{
+    margin-top: 200px;
   }
 }

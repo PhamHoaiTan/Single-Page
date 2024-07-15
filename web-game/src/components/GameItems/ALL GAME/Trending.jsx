@@ -3,17 +3,9 @@ import { games } from '../../../assets/games/game';
 import GameItem from '../../GameItem/GameItem';
 
 const Trending = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [itemWidth, setItemWidth] = useState(0);
-    useEffect(() => {
-      const items = document.querySelectorAll('.game');
-      if (items.length > 0 ) {
-        setItemWidth(items[0].offsetWidth + 30); 
-      }
-    }, []);
-
+    const [currentIndex, setCurrentIndex] = useState(0)
     const carouselInnerRef = useRef(null);
-  const carouselItemWidth = 300; // Chiều rộng của mỗi item carousel (giả sử là 300px)
+  const carouselItemWidth = 300;
 
   const handlePrevClick = () => {
     const newIndex = currentIndex - (window.innerWidth < 576 ? 3 : 4);

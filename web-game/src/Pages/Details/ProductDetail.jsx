@@ -7,6 +7,7 @@ import './ProductDetail.css';
 import Requirements from '../../components/Details/Requirements';
 import { gamesdiscount } from '../../assets/games/gamesdiscount';
 import freegame from '../../assets/games/freegame';
+import { assets } from '../../assets/assets';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -40,19 +41,26 @@ function ProductDetail() {
 
   // scroll
   window.addEventListener('scroll',()=>{
-        const detailRightid = document.getElementById('detailRight');
-        const crollY = window.scrollY;
-          if(crollY < widthContain && crollY < topSuggest - nice){
-            detailRightid.style.position = 'fixed';
-            detailRightid.style.top = '20%';
-          }else if(crollY >= topSuggest-nice){
-            detailRightid.style.position = 'absolute';
-            detailRightid.style.top = `${topSuggest-nice}px`;
-          }
-          else{
-            detailRightid.style.position = 'absolute';
-          }
-  })
+    const detailRightid = document.getElementById('detailRight');
+    const crollY = window.scrollY;
+    
+    if(window.innerWidth > 600){
+        if(crollY < widthContain && crollY < topSuggest - nice ){
+          detailRightid.style.position = 'fixed';
+          detailRightid.style.top = '20%';
+        }else if(crollY >= topSuggest-nice){
+          detailRightid.style.position = 'absolute';
+          detailRightid.style.top = `${topSuggest-nice-100}px`;
+        }
+        else{
+          detailRightid.style.position = 'absolute';
+        }
+      }
+      else{
+        detailRightid.style.position = 'static';
+      }
+})  
+  
 
   return (
     <div className="ProductDetail">
@@ -85,12 +93,13 @@ function ProductDetail() {
           <td><p className='p-left'>Publisher</p></td>
           <td>{product.publisher} </td>
         </tr>
-
-
+        <tr style={{alignItems:'center'}}>
+          <td><p className='p-left'>Platfrom</p></td>
+          <td><img src={assets.window_icon} alt="" style={{width:'50px'}} /> </td>
+        </tr>
       </table>
       </div>
       </div>
-
       <div className="suggestion" ref={suggestion}>
           <Requirements product={product}/>
           <Suggestions genre={product.genre} currentGameId={product.id} />
