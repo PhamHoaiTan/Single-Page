@@ -9,7 +9,6 @@ body {
 
 a{
   color: #FFF;
-  margin: 0 15px;
   text-decoration: none;
 }
 
@@ -70,5 +69,10 @@ a{
   }
   100%{
     opacity: 100;
+  }
+}
+@media screen and (max-width:600px) {
+  .pre-next button{
+    display: none;
   }
 }

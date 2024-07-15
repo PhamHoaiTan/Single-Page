@@ -3,7 +3,6 @@ import { games } from '../../../assets/games/game';
 import GameItem from '../../GameItem/GameItem';
 
 const Trending = () => {
-    const myDivRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemWidth, setItemWidth] = useState(0);
     useEffect(() => {
@@ -12,27 +11,38 @@ const Trending = () => {
         setItemWidth(items[0].offsetWidth + 30); 
       }
     }, []);
-    const handleNext = () => {
-        setCurrentIndex(currentIndex + 1);
-    };
-    const handlePrev = () => {
-      if (currentIndex > 0) {
-        setCurrentIndex(currentIndex - 1);
-      }
-    };
-    useEffect(() => {
-      myDivRef.current.style.transform = `translateX(-${currentIndex * 6 * itemWidth}px)`;
-    }, [currentIndex, itemWidth]);
+
+    const carouselInnerRef = useRef(null);
+  const carouselItemWidth = 300; // Chiều rộng của mỗi item carousel (giả sử là 300px)
+
+  const handlePrevClick = () => {
+    const newIndex = currentIndex - (window.innerWidth < 576 ? 3 : 4);
+    setCurrentIndex(newIndex >= 0 ? newIndex : 0);
+    carouselInnerRef.current.scrollTo({
+      left: newIndex >= 0 ? newIndex * carouselItemWidth : 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleNextClick = () => {
+    const newIndex = currentIndex + (window.innerWidth < 576 ? 3 : 4);
+    setCurrentIndex(newIndex < games.length ? newIndex : currentIndex);
+    carouselInnerRef.current.scrollTo({
+      left: newIndex * carouselItemWidth,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section className="trending">
     <div className="title-pre-next">
     <h2>Trending Now</h2>
     <div className="pre-next">
-      <button className='pre' onClick={handlePrev}><p>&#8249;</p></button>
-      <button className="next" onClick={handleNext} ><p>&#8250;</p></button>
+      <button className='pre' onClick={handlePrevClick}><p>&#8249;</p></button>
+      <button className="next" onClick={handleNextClick} ><p>&#8250;</p></button>
     </div>
     </div>
-    <div className="text"  ref={myDivRef}>
+    <div className="text"  ref={carouselInnerRef}>
     <div className="games">
       {games.map((item,index) => {return(
             <GameItem 

@@ -11,7 +11,6 @@ function Navbar({setShowLogin}) {
     <Link to={'/'}><img src={assets.logo} alt="" className='logo'/></Link>
     <p className='line'>|</p>
       <a href="/"><h2>STORE</h2></a>
-      <a href="/catalogue">Catalogue</a>
     </div>
     <div className='nav-right'>
       <a href="/cart"><img src={assets.cart} alt="" className='cart'/></a>

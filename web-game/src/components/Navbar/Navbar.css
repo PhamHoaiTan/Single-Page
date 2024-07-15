@@ -1,6 +1,6 @@
 .navbar{
   display: flex;
-  position: fixed;
+  position: fixed;  
   width: 100%;
   justify-content: space-between;
   background-color: #18181C;
@@ -32,7 +32,7 @@
   gap: 20px;
 }
 .account-img{
-  width: 3vw;
+  width: 60px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -45,8 +45,8 @@
   cursor: pointer;
 }
 .cart{
-  width: 2svw;
-  height: 2vw;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #333333;
   object-fit: cover;
@@ -56,9 +56,24 @@
    .navbar{
     height: 50px;
     font-size: 16px;
+     margin: 0;
    }
    .logo{
     width: 50px;
     height: 100%;
+    margin: 0;
+   }
+   .nav-left{
+    gap: 0;
+   }
+   .line{
+    display: none;
+   }
+   .bt-download{
+    display: none;
+   }
+   .nav-right{
+    gap: 0px;
+    margin: 0;
    }
 }

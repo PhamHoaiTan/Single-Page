@@ -72,9 +72,22 @@ function ProductDetail() {
       <button className='buyNow'>BUY NOW</button><br></br>
       <button className='addToCard'>ADD TO CARD</button>
       </div>
-      <p><strong>Release Date:</strong> {product.releaseDate}</p>
-      <p><strong>Developer:</strong> {product.developer}</p>
-      <p><strong>Publisher:</strong> {product.publisher}</p>
+      <table>
+        <tr>
+            <td><p className='p-left'>Release Date</p></td>
+            <td><p>{product.releaseDate}</p></td>
+        </tr>
+        <tr>
+          <td><p className='p-left'>Developer</p></td>
+          <td>{product.developer}</td>
+        </tr>
+        <tr>
+          <td><p className='p-left'>Publisher</p></td>
+          <td>{product.publisher} </td>
+        </tr>
+
+
+      </table>
       </div>
       </div>
 

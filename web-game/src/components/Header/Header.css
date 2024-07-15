@@ -10,7 +10,7 @@
     border-radius: 20px;
 }
 .header .header-text{
-    color: #FFFF99;
+    color: #f0f042;
     position: absolute;
     font-size: 2.2vw;
     display: flex;
@@ -19,17 +19,22 @@
     top: 28%;
     left: 10%;
     animation: FadeIn 3s;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 .header-text .brow{
     margin-top: 20px;
-    padding: 0.9vw 2.1vw;
+    padding: 10px 40px;
     border-radius: 20px;
     background-color: #F73F81;
     color: white;
-    font-size: 1vw;
+    font-size: 0.7em;
     font-weight: 600;
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
 }
 @media screen and (max-width:600px) {
     .header img{
@@ -39,15 +44,18 @@
         overflow: hidden;
     }
     .header .header-text{
-        font-size: 1em;
+        top :20%;
+        left:13%;
+        font-size: 1.3em;
         text-align: center;
-        justify-content: center;
     }
     .header-text .brow{
-        font-size: 1em;
+        margin-top: 200px;
+
     }
     .header{
         margin-top: 15%;
+        text-align: center;
     }
     .header-img{
         width: 100%;

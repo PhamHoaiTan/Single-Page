@@ -4,37 +4,45 @@ import { gamesdiscount } from '../../../assets/games/gamesdiscount';
 import { assets } from '../../../assets/assets';
 import GameItem from '../../GameItem/GameItem';
 const Gene = () => {
-    const myDivRef = useRef(null);
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
     const [itemWidth, setItemWidth] = useState(0);
-
     useEffect(() => {
       const items = document.querySelectorAll('.game');
-      if (items.length > 0) {
-        setItemWidth(items[0].offsetWidth + 60); 
+      if (items.length > 0 ) {
+        setItemWidth(items[0].offsetWidth + 30); 
       }
     }, []);
-    const handleNext = () => {
-        setCurrentIndex(currentIndex + 1);
-    };
-    const handlePrev = () => {
-      if (currentIndex > 0) {
-        setCurrentIndex(currentIndex - 1);
-      }
-    };
-    useEffect(() => {
-      myDivRef.current.style.transform = `translateX(-${currentIndex * 4 * itemWidth}px)`;
-    }, [currentIndex, itemWidth]);
+
+    const carouselInnerRef = useRef(null);
+  const carouselItemWidth = 300; // Chiều rộng của mỗi item carousel (giả sử là 300px)
+
+  const handlePrevClick = () => {
+    const newIndex = currentIndex - (window.innerWidth < 576 ? 3 : 4);
+    setCurrentIndex(newIndex >= 0 ? newIndex : 0);
+    carouselInnerRef.current.scrollTo({
+      left: newIndex >= 0 ? newIndex * carouselItemWidth : 0,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleNextClick = () => {
+    const newIndex = currentIndex + (window.innerWidth < 576 ? 3 : 4);
+    setCurrentIndex(newIndex < gamesdiscount.length ? newIndex : currentIndex);
+    carouselInnerRef.current.scrollTo({
+      left: newIndex * carouselItemWidth,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className="Gene">
     <div className="title-pre-next">
       <h2>Flash Sales</h2>
       <div className="pre-next">
-        <button className='pre' onClick={handlePrev} >&#8249;</button>
-        <button className="next" onClick={handleNext} >&#8250;</button>
+        <button className='pre' onClick={handlePrevClick} >&#8249;</button>
+        <button className="next" onClick={handleNextClick} >&#8250;</button>
       </div>
       </div>
-    <div className="text"  ref={myDivRef}>
+    <div className="text"  ref={carouselInnerRef}>
       <div className="games">
       {gamesdiscount.map((item,index) => {return(
             <GameItem 

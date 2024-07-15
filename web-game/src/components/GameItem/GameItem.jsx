@@ -24,14 +24,14 @@ const GameItem = ({
                 {!itemCount?<img src={assets.plus} onClick={()=>setItemCount(prev=>prev+1)} alt=""/>
                   :<img src={assets.tick} alt='' onClick={()=>setItemCount(pre=>pre-1)}/>
                 }</div>
+                  <Link to={`/product/${id}`}>
                 <img src={image} alt={name} />
+                </Link> 
                 </div>
-                <Link to={`/product/${id}`}>
                 <p>Base game</p>
                 <h4>{name}</h4>
                 <p>{price}</p>
                 <p>{genre}</p>
-                </Link> 
                 </div>
         }
       </div>

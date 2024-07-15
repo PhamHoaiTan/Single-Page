@@ -87,3 +87,23 @@
   .suggestion{
     position: relative;
   }
+  table{
+    width: 100%;
+    column-gap: 40px;
+    text-align: right;
+  }
+  table tr{
+  }
+  .p-left{
+    text-align: left  ;
+  }
+
+@media  screen and (max-width:600px) {
+  .detail-right{
+    position: relative;
+  }
+  .details-content{
+    display: flex;
+    flex-direction: column;
+  }
+}
