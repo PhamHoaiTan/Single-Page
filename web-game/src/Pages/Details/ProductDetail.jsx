@@ -101,7 +101,6 @@ function ProductDetail() {
       </div>
       </div>
       <div className="suggestion" ref={suggestion}>
-          <Requirements product={product}/>
           <Suggestions genre={product.genre} currentGameId={product.id} />
       </div>
     </div>

@@ -56,8 +56,8 @@
     width: 15vw;
     display: flex;
     flex-direction: column;
-    gap: 1px;
     top: 20%;
+    justify-content: center;
     left: 75%;
   }
   .detail-bt button{
@@ -93,7 +93,6 @@
   .p-left{
     text-align: left  ;
   }
-
 @media  screen and (max-width:600px) {
   .detail-right{
     width: 100%;
@@ -101,11 +100,13 @@
   .details-content{
     display: flex;
     flex-direction: column;
+    flex: auto auto auto;
   }
   
   .deltail-h1{
     font-size: 2em;
   }
+
   .ProductDetail{
     margin-top: 10%;
     width: 100%;
@@ -114,6 +115,6 @@
     flex-direction: column;
   }
   .suggestion{
-    margin-top: 200px;
+    margin-top: 100%;
   }
 }

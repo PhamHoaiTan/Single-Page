@@ -1,8 +1,4 @@
 /* src/components/Suggestions/Suggestions.css */
-.Suggestions {
-    margin-top: 40px;
-    display: block;
-  }
   
   .Suggestions h2 {
     color: #FFF;
@@ -17,7 +13,6 @@
     margin: 10px;
     text-align: center;
     flex: 0 1 calc(25% - 20px); 
-    box-sizing: border-box;
   }
   
   .suggested-game img {
@@ -30,6 +25,9 @@
     margin-top: 10px;
     font-size: 14px;
     color: #FFF;
+  }
+  .Suggestions{
+    margin-top: 150px;
   }
   @media screen and (max-width:600px) {
     .suggested-game{
