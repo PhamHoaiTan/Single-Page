@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "./Pages/Details/ProductDetail";
 import AddToCart from "./Pages/Cart/AddToCart";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
-import { StoreContextProvider } from "./StoreContext/StoreContext";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);

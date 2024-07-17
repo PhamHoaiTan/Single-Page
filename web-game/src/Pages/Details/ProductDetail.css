@@ -54,9 +54,9 @@
   /* Right Details */
   .detail-right{
     width: 15vw;
+    position: fixed;
     display: flex;
     flex-direction: column;
-    top: 20%;
     justify-content: center;
     left: 75%;
   }

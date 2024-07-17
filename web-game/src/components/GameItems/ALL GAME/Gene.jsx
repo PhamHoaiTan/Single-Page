@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import { gamesdiscount } from '../../../assets/games/gamesdiscount';
-import { assets } from '../../../assets/assets';
 import GameItem from '../../GameItem/GameItem';
 const Gene = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

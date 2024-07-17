@@ -17,7 +17,7 @@ const AddToCard = () => {
         <hr />
         {
           games.map((item, index)=>{
-            if(cartItems[item.id]>0)
+            if(cartItems[item.id]||cartItems>0)
             {
               return (
                 <div className="cart-items-title cart-items-item">

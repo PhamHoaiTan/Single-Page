@@ -10,7 +10,7 @@ function Navbar({setShowLogin}) {
     <div className="nav-left">
     <Link to={'/'}><img src={assets.logo} alt="" className='logo'/></Link>
     <p className='line'>|</p>
-      <a href="/"><h2>STORE</h2></a>
+      <Link to="/"><h2>STORE</h2></Link>
     </div>
     <div className='nav-right'>
       <Link  to="/cart"><img src={assets.cart} alt="" className='cart'/></Link>
