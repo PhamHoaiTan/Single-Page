@@ -13,7 +13,7 @@ function Navbar({setShowLogin}) {
       <a href="/"><h2>STORE</h2></a>
     </div>
     <div className='nav-right'>
-      <a href="/cart"><img src={assets.cart} alt="" className='cart'/></a>
+      <Link  to="/cart"><img src={assets.cart} alt="" className='cart'/></Link>
       <img src={assets.account} alt="" className='account-img' onClick={()=>setShowLogin(true)} />
       <button className='bt-download'>Download</button>
     </div>

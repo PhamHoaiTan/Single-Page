@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets";
+import { StoreContext } from "../../StoreContext/StoreContext";
 
 const GameItem = ({
   id,
@@ -13,7 +14,7 @@ const GameItem = ({
   developer,
   publisher,
 }) => {
-  const [itemCount,setItemCount] = useState(0);
+ const {cartItems, setCartItems, addToCard, removeFormCart}= useContext(StoreContext);
   return (
     <div className="game-trending">
       <div className="games">
@@ -21,8 +22,8 @@ const GameItem = ({
                 <div key={id} className="game">
                 <div className="game-img">
                 <div className="add-icon">
-                {!itemCount?<img src={assets.plus} onClick={()=>setItemCount(prev=>prev+1)} alt=""/>
-                  :<img src={assets.tick} alt='' onClick={()=>setItemCount(pre=>pre-1)}/>
+                {!cartItems[id]?<img src={assets.plus} onClick={()=>addToCard(id)} alt=""/>
+                  :<img src={assets.tick} alt='' onClick={()=>removeFormCart(id)}/>
                 }</div>
                   <Link to={`/product/${id}`}>
                 <img src={image} alt={name} />

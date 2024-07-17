@@ -8,13 +8,11 @@ import { StoreContextProvider } from './StoreContext/StoreContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <StoreContextProvider>
     <BrowserRouter>
     <App />
     </BrowserRouter>
     </StoreContextProvider>
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

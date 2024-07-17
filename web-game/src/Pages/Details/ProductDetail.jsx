@@ -50,7 +50,7 @@ function ProductDetail() {
           detailRightid.style.top = '20%';
         }else if(crollY >= topSuggest-nice){
           detailRightid.style.position = 'absolute';
-          detailRightid.style.top = `${topSuggest-nice-100}px`;
+          detailRightid.style.top = `${topSuggest-nice}px`;
         }
         else{
           detailRightid.style.position = 'absolute';
