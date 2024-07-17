@@ -40,8 +40,8 @@ function ProductDetail() {
   useEffect(() => {
     const handleScroll = () => {
       const detailRightid = document.getElementById("detailRight");
-      const scrollY = window.scrollY;
       if (window.innerWidth > 600) {
+      const scrollY = window.scrollY;
         if (scrollY < topSuggest - heightDetailRight) {
           detailRightid.style.position = "fixed";
           detailRightid.style.top = "20%";
@@ -55,11 +55,8 @@ function ProductDetail() {
         detailRightid.style.position = "static";
       }
     };
-    
-    console.log(1)
     window.addEventListener("scroll", handleScroll);
     return () => {
-      console.log(2)
       window.removeEventListener("scroll", handleScroll);
     };
   }, [widthContain, topSuggest, heightDetailRight]);
