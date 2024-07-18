@@ -14,6 +14,10 @@ import game_12 from './Game 12.webp'
 import game_16 from './Game 16.webp'
 import game_17 from './Game 17.webp'
 import game_18 from './Game 18.webp'
+import game_19 from './Game 19.webp'
+import game_20 from './Game 20.webp'
+import game_21 from './Game 21.webp'
+
 
 
 
@@ -21,9 +25,9 @@ import game_18 from './Game 18.webp'
 
 const games = [
   {
-    id: 1,
+    id: '1',
     name: "Monkey King 2099",
-    price: "$19.99",
+    price: 19.99,
     genre: "Adventure / MOBA",
     image: game_1,
     description: "Monkey King 2099 is a futuristic adventure game set in a vibrant and chaotic world. Players embark on a quest to uncover the secrets of the Monkey King's past while battling enemies and solving puzzles.",
@@ -32,9 +36,9 @@ const games = [
     publisher: "Gaming Corp",
   },
   {
-    id: 2,
+    id: '2',
     name: "Call of Rusi",
-    price: "$29.99",
+    price: 29.99,
     genre: "FPS / Bang Bang",
     image: game_2,
     description: "Call of Rusi is an action-packed first-person shooter where players engage in intense combat missions across various terrains. With stunning graphics and immersive gameplay, this game takes FPS to a new level.",
@@ -43,9 +47,9 @@ const games = [
     publisher: "Activision",
   },
   {
-    id: 3,
+    id: '3',
     name: "Final Frontier XX",
-    price: "$24.99",
+    price: 24.99,
     genre: "Adventure / FPS",
     image: game_3,
     description: "Final Frontier XX takes players on an epic space adventure. Navigate through galaxies, battle space pirates, and uncover hidden secrets in this thrilling FPS.",
@@ -54,9 +58,9 @@ const games = [
     publisher: "Galaxy Corp",
   },
   {
-    id: 4,
+    id: '4',
     name: "Need for Dead",
-    price: "$39.99",
+    price: 39.99,
     genre: "Br / Br / Skrt Skrt",
     image: game_4,
     description: "Need for Dead combines high-speed racing with zombie survival. Race through apocalyptic landscapes, customize your vehicle, and fight off hordes of the undead.",
@@ -65,9 +69,9 @@ const games = [
     publisher: "Zombie Inc",
   },
   {
-    id: 5,
+    id: '5',
     name: "Face UR Nightmares",
-    price: "$9.99",
+    price: 9.99,
     genre: "Horror",
     image: game_5,
     description: "Face UR Nightmares is a horror game that plunges players into a terrifying world of darkness. Solve puzzles and escape from horrifying creatures.",
@@ -76,9 +80,9 @@ const games = [
     publisher: "Horror Studios",
   },
   {
-    id: 6,
+    id: '6',
     name: "Mother Russia",
-    price: "$14.99",
+    price: 14.99,
     genre: "Adventure / MOBA",
     image: game_6,
     description: "Mother Russia is a strategy-based MOBA game set in post-apocalyptic Russia. Form alliances, build your base, and conquer territories.",
@@ -87,9 +91,9 @@ const games = [
     publisher: "Cold War Entertainment",
   },
   {
-    id: 7,
+    id: '7',
     name: "Survive Against All Odds",
-    price: "$19.99",
+    price: 19.99,
     genre: "FPS / Bang Bang",
     image: game_7,
     description: "Survive Against All Odds is a survival FPS game. Players must scavenge for resources, craft weapons, and fend off enemies in a hostile environment.",
@@ -98,9 +102,9 @@ const games = [
     publisher: "Lone Wolf Studios",
   },
   {
-    id: 8,
+    id: '8',
     name: "Space Wars",
-    price: "$29.99",
+    price: 29.99,
     genre: "Adventure / FPS",
     image: game_8,
     description: "Space Wars is an intergalactic FPS game. Players engage in space battles, explore alien planets, and complete missions to save the galaxy.",
@@ -109,9 +113,9 @@ const games = [
     publisher: "Universe Corp",
   },
   {
-    id: 9,
+    id: '9',
     name: "Brave New World",
-    price: "$24.99",
+    price: 24.99,
     genre: "Br / Br / Skrt Skrt",
     image: game_9,
     description: "Brave New World is an open-world adventure game. Explore vast landscapes, interact with NPCs, and shape the story through your choices.",
@@ -120,9 +124,9 @@ const games = [
     publisher: "Adventure Corp",
   },
   {
-    id: 10,
+    id: '10',
     name: "Dark Realm",
-    price: "$39.99",
+    price: 39.9,
     genre: "Horror",
     image: game_10,
     description: "Dark Realm is a horror game that challenges players to survive in a nightmarish world. Solve puzzles, avoid monsters, and uncover the truth behind the darkness.",
@@ -131,9 +135,9 @@ const games = [
     publisher: "Horror Inc",
   },
   {
-    id: 11,
+    id: '11',
     name: "Fantasy Quest",
-    price: "$14.99",
+    price: 14.99,
     genre: "Adventure / MOBA",
     image: game_11,
     description: "Fantasy Quest is a MOBA game set in a magical world. Choose your hero, team up with friends, and battle against other players in epic arenas.",
@@ -142,9 +146,9 @@ const games = [
     publisher: "Magic Studios",
   },
   {
-    id: 12,
+    id: '12',
     name: "Survival Horror",
-    price: "$9.99",
+    price: 9.99,
     genre: "Horror",
     image: game_12,
     description: "Survival Horror is a survival game set in a haunted mansion. Gather resources, solve puzzles, and survive the night against relentless ghosts.",
@@ -153,9 +157,9 @@ const games = [
     publisher: "Horror Corp",
   },
   {
-    id: 16,
+    id: '16',
     name: "Apocalypse Racer",
-    price: "$29.99",
+    price: 29.99,
     genre: "Br / Br / Skrt Skrt",
     image: game_16,
     description: "Apocalypse Racer is a high-octane racing game set in a post-apocalyptic world. Customize your vehicle and race against other survivors.",
@@ -164,9 +168,9 @@ const games = [
     publisher: "Apocalypse Studios",
   },
   {
-    id: 17,
+    id: '17',
     name: "Galaxy Shooter",
-    price: "$24.99",
+    price: 24.9,
     genre: "Adventure / FPS",
     image: game_17,
     description: "Galaxy Shooter is an FPS game where players battle against alien invaders. Upgrade your weapons and defend the galaxy from destruction.",
@@ -175,15 +179,48 @@ const games = [
     publisher: "Galaxy Corp",
   },
   {
-    id: 18,
+    id: '18',
     name: "City Builder",
-    price: "$19.99",
+    price: 19.99,
     genre: "Strategy / Simulation",
     image: game_18,
     description: "City Builder is a strategy game where players design and manage their own city. Plan your layout, manage resources, and keep your citizens happy.",
     releaseDate: "2026-03-15",
     developer: "Builder Games",
     publisher: "City Studios",
+  },
+ {
+    id: '19',
+    name: "Epic Journey",
+    price: 29.99,
+    genre: "Adventure / RPG",
+    image: game_19,
+    description: "Epic Journey takes players on an epic adventure through a mystical world filled with quests and challenges.",
+    releaseDate: "2026-05-20",
+    developer: "Adventure Studios",
+    publisher: "Epic Games",
+  },
+  {
+    id: '20',
+    name: "Dream Life",
+    price: 24.9,
+    genre: "Simulation / Life",
+    image: game_20,
+    description: "Dream Life lets players build and manage their own virtual neighborhoods, creating stories and adventures.",
+    releaseDate: "2026-07-10",
+    developer: "Sim Studios",
+    publisher: "Life Games",
+  },
+  {
+    id: '21',
+    name: "Speed Racer",
+    price: 19.99,
+    genre: "Racing / Sports",
+    image: game_21,
+    description: "Speed Racer is a high-octane racing game where players compete in thrilling races on various tracks.",
+    releaseDate: "2026-09-01",
+    developer: "Racing Studios",
+    publisher: "Speed Games",
   }
 ];
 

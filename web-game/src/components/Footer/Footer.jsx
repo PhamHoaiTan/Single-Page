@@ -5,7 +5,9 @@ import { assets } from '../../assets/assets';
 
 function Footer() {
   return (
-    <footer className="Footer">
+    <sfooter>
+
+    <div className="Footer">
       <h3>Connect With Us:</h3>
       <nav className='item-social'>
         <a href="#"><img src={assets.facebook} alt=""  /></a>
@@ -36,7 +38,10 @@ function Footer() {
         </p>
       </div>
     </div>
-    </footer>
+    <hr />
+    <div className="last-comment"><p>Copyright 2024 @Fptgamingzone.com - All Right Reserved</p></div>
+    </div>
+    </sfooter>
   );
 }
 

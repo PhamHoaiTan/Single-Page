@@ -1,20 +1,22 @@
 /* Catalogue.css */
 .Catalogue {
   width: 80%; 
-  margin: 10vh auto;
+  margin: 0 auto;
 }
 .genre-section {
   margin-bottom: 40px;
 }
-
-
-.genre-section .game img {
-  border-radius: 10px;
-  width: 100%;
+.catalogue-game-item{
+  margin-top: 10%;
 }
-
-.genre-section .game h3, .genre-section .game p {
-  margin: 10px 0;
+.catalogue-games{
+  display: flex;
+  gap: 20px;
 }
-
+.catalogue-games img{
+  width: 250px;
+}
+h2{
+  margin: 10px auto;
+}
 

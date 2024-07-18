@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home";
@@ -12,7 +12,6 @@ import LoginPopup from "./components/LoginPopup/LoginPopup";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
-
   return (
     <>
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}

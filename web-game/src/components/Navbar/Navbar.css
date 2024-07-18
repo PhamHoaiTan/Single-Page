@@ -6,7 +6,6 @@
   background-color: #18181C;
   align-items: center;
   z-index: 1;
-  margin-top: 0;
   top: 0;
   height: 4vw;
 }
@@ -45,10 +44,10 @@
   cursor: pointer;
 }
 .cart{
+  margin-top: 4px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #333333;
   object-fit: cover;
 }
 

@@ -9,6 +9,9 @@
     margin-top: 4%;
 
   }
+  body{
+    background-color: #121212;
+  }
   .deltail-h1{
     font-size: 50px;
   }
@@ -53,8 +56,9 @@
   }
   /* Right Details */
   .detail-right{
-    width: 15vw;
     position: fixed;
+    width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -6,9 +6,11 @@ import GameItems from '../../components/GameItems/GameItems';
 
 function Home() {
   return (
+    <div className="css-home">
     <div className="Home">
       <Header />
       <GameItems/>
+    </div>
     </div>
   );
 }

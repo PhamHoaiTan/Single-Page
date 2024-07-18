@@ -7,7 +7,6 @@ import { gamesdiscount } from "../../assets/games/gamesdiscount";
 import freegame from "../../assets/games/freegame";
 import { assets } from "../../assets/assets";
 import { StoreContext } from "../../StoreContext/StoreContext";
-
 function ProductDetail() {
   const { id } = useParams();
   useEffect(() => {
@@ -15,14 +14,14 @@ function ProductDetail() {
   }, []);
   const navigator = useNavigate();
   const product =
-    games.find((game) => game.id === parseInt(id)) ||
-    gamesdiscount.find((game) => game.id === parseInt(id)) ||
-    freegame.find((game) => game.id === parseInt(id));
+    games.find((game) => game.id === id )||
+    gamesdiscount.find((game) => game.id === id)||
+    freegame.find((game) => game.id === id);
 
   const detailContain = useRef(null);
   const detailRight = useRef(null);
   const suggestion = useRef(null);
-  const { cartItems, setCartItems, addToCard, removeFormCart } =
+  const {addToCard } =
     useContext(StoreContext);
 
   const [widthContain, setWidthContain] = useState(0);
@@ -41,15 +40,19 @@ function ProductDetail() {
     const handleScroll = () => {
       const detailRightid = document.getElementById("detailRight");
       if (window.innerWidth > 600) {
-      const scrollY = window.scrollY;
-        if (scrollY < topSuggest - heightDetailRight) {
+        const scrollY = window.scrollY;
+        
+        if (scrollY < topSuggest - heightDetailRight && scrollY < widthContain) {
           detailRightid.style.position = "fixed";
           detailRightid.style.top = "20%";
+          console.log("use")
         } else if (scrollY >= topSuggest - heightDetailRight) {
           detailRightid.style.position = "absolute";
           detailRightid.style.top = `${topSuggest - heightDetailRight}px`;
         } else {
-          detailRightid.style.position = "absolute";
+          detailRightid.style.position = "fixed";
+          detailRightid.style.top = "20%";
+
         }
       } else {
         detailRightid.style.position = "static";
@@ -59,7 +62,7 @@ function ProductDetail() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [widthContain, topSuggest, heightDetailRight]);
+  },[widthContain, topSuggest, heightDetailRight]);
 
   if (!product) {
     return <div>Product not found</div>;

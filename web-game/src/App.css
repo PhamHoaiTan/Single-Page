@@ -1,12 +1,16 @@
 /* App.css */
 
 body {
-  background-color: #121212;
-  color: #FFF;
+  color: white;
+  background-color: black;
   margin: 0;
   padding: 0;
 }
-
+.App{
+  height: 90%;
+  margin: auto 0;
+  
+}
 a{
   color: #FFF;
   text-decoration: none;
@@ -18,12 +22,9 @@ a{
   flex: 0 0 auto;
   gap: 50px;
   box-sizing: border-box;
-}
-.games{
   width: 250px;
   height:500px;
 }
-
 .game img {
   border-radius: 5px;
   width: 100%;
