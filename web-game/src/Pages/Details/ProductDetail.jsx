@@ -41,7 +41,6 @@ function ProductDetail() {
       const detailRightid = document.getElementById("detailRight");
       if (window.innerWidth > 600) {
         const scrollY = window.scrollY;
-        
         if (scrollY < topSuggest - heightDetailRight && scrollY < widthContain) {
           detailRightid.style.position = "fixed";
           detailRightid.style.top = "20%";

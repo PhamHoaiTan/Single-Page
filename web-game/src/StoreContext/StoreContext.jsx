@@ -16,22 +16,23 @@ export const StoreContextProvider = (props) => {
   useEffect(() => {
     console.log(cartItems);
   }, [cartItems]);
-
+  
   const getTotalCartAmount = () => {
     let totalAmount = 0;
+    const dot = document.getElementById("dot-img");
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
+        dot.style.display = 'block';
         let itemInfo = games.find((product) => product.id === item);
         if (itemInfo) {
           totalAmount += itemInfo.price;
           console.log(totalAmount);
-        } else 
-        {
+        } else {
           console.log(`Product with ID ${item} not found in games array`);
         }
       }
     }
-    
+
     return totalAmount;
   };
 

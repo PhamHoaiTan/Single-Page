@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home";
@@ -9,9 +9,11 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "./Pages/Details/ProductDetail";
 import AddToCart from "./Pages/Cart/AddToCart";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
+import { StoreContext } from "./StoreContext/StoreContext";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
+  const {cartItems} = useContext(StoreContext)
   return (
     <>
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}

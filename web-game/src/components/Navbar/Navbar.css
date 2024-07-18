@@ -50,6 +50,21 @@
   border-radius: 50%;
   object-fit: cover;
 }
+.account-img img{
+  width: 10px;
+  height: 10px;
+}
+.cart-dot{
+  position: relative;
+}
+.dot-img{
+  width: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  right: -2%;
+  display: none;
+}
 
 @media screen and (max-width:600px) {
    .navbar{
