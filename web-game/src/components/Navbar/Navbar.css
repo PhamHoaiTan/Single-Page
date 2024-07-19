@@ -78,7 +78,7 @@
     height: 50px;
     font-size: 16px;
     margin: 0;
-    position: static;
+    position: absolute;
    }
    .logo{
     width: 50px;

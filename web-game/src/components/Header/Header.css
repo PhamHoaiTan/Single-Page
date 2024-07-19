@@ -44,9 +44,9 @@
         overflow: hidden;
     }
     .header .header-text{
-        top :25%;
-        left:25%;
-        font-size: 1.3em;
+        top :20%;
+        left:12%;
+        font-size: 2em;
         text-align: center;
         gap: 10px;
     }
@@ -56,5 +56,14 @@
     }
     .header-img{
         width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .header .header-text{
+        top :12%;
+        left:15%;
+        font-size: 1.2em;
+        text-align: center;
+        gap: 10px;
     }
 }

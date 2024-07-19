@@ -1,0 +1,13 @@
+.ShowMore{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+.ShowMore img{
+    width: 20px;
+    height: 20px;
+}

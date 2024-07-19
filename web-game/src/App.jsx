@@ -22,7 +22,7 @@ function App() {
       {showMore ?<ShowMore setShowMore={setShowMore}/> : <></>}
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="App">
-        <Navbar setShowLogin={setShowLogin} setShowMore={setShowMore}  />
+        <Navbar setShowLogin={setShowLogin} setShowMore={setShowMore}  showMore={showMore} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalogue" element={<Catalogue />} />

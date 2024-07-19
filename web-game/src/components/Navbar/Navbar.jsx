@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
-function Navbar({setShowLogin,setShowMore}) {
+function Navbar({setShowLogin,setShowMore,showMore}) {
   return (
     <div className='navbar'>
     <div className="nav-left">
@@ -14,7 +14,8 @@ function Navbar({setShowLogin,setShowMore}) {
       {/* <img src={assets.search_icon} alt="" className='search-button' /> */}
     </div>
     <div className='nav-right'>
-      <img src={assets.more} alt=""  className='more' onClick={()=>setShowMore(true)}/>
+           {!showMore ? <img src={assets.more} alt=""  className='more' onClick={()=>setShowMore(true)}/>
+  :<img src={assets.cross_icon} alt=""  onClick={()=>setShowMore(false)}/>}
       <div className="cart-dot" id='cart-dot'>
       <Link  to="/cart"><img src={assets.cart} alt="" className='cart'/></Link>
       <img src={assets.dot} alt="" className='dot-img' id='dot-img'  />
