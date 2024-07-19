@@ -100,7 +100,7 @@ function ProductDetail() {
               BUY NOW
             </button>
             <br></br>
-            <button className="addToCard"  onClick={() => addToCard(id)}>ADD TO CARD</button>
+            <button className="addToCard"  onClick={() =>addToCard(id)}>ADD TO CARD</button>
           </div>
           <table>
             <tr>

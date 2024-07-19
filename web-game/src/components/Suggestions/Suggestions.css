@@ -33,4 +33,7 @@
     .suggested-game{
       flex: 0 1 calc(100% - 200px);
     }
+    .Suggestions{
+      margin-top: 400px;
+    }
   }

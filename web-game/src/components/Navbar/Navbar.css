@@ -63,7 +63,9 @@
   position: absolute;
   top: 10%;
   right: -2%;
-  display: none;
+}
+.search-button{
+  cursor: pointer;
 }
 
 @media screen and (max-width:600px) {
@@ -78,7 +80,7 @@
     margin: 0;
    }
    .nav-left{
-    gap: 0;
+    gap: 10px;
    }
    .line{
     display: none;

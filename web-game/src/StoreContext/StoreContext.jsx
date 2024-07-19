@@ -5,35 +5,47 @@ export const StoreContext = createContext(null);
 
 export const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
+  const [count,addCount] = useState(0)
   const addToCard = (itemID) => {
     if (!cartItems[itemID]) {
       setCartItems((prev) => ({ ...prev, [itemID]: 1 }));
+      addCount(count+1);
     }
   };
   const removeFormCart = (itemID) => {
+    addCount(count-1);
     setCartItems((prev) => ({ ...prev, [itemID]: prev[itemID] - 1 }));
   };
   useEffect(() => {
-    console.log(cartItems);
+    console.log(cartItems,count);
+     const dot = document.getElementById("dot-img");
+          if(count===0){
+            dot.style.display = 'none';
+          }
+          else if(count>0){
+            dot.style.display = 'block';
+          }
   }, [cartItems]);
-  
-  const getTotalCartAmount = () => {
-    let totalAmount = 0;
-    const dot = document.getElementById("dot-img");
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        dot.style.display = 'block';
-        let itemInfo = games.find((product) => product.id === item);
-        if (itemInfo) {
-          totalAmount += itemInfo.price;
-          console.log(totalAmount);
-        } else {
-          console.log(`Product with ID ${item} not found in games array`);
+  // useEffect(()=>{
+  //     const dot = document.getElementById("dot-img");
+  //       if(cartItems)
+  //         dot.style.display = 'none';
+  //   })
+    
+    const getTotalCartAmount = () => {
+      let totalAmount = 0;
+      for (const item in cartItems) {
+        console.log(item);
+        if (cartItems[item] > 0) {
+          let itemInfo = games.find((product) => product.id === item);
+          if (itemInfo) {
+            totalAmount += itemInfo.price;
+          } else {
+            console.log(`Product with ID ${item} not found in games array`);
+          }
         }
       }
-    }
-
-    return totalAmount;
+      return totalAmount;
   };
 
   const contextValue = {

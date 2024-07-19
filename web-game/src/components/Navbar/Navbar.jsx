@@ -12,6 +12,8 @@ function Navbar({setShowLogin}) {
     <Link to={'/'}><img src={assets.logo} alt="" className='logo'/></Link>
     <p className='line'>|</p>
       <Link to="/"><h2>STORE</h2></Link>
+      <Link to='/catalogue'><p>Catalogues</p></Link>
+      {/* <img src={assets.search_icon} alt="" className='search-button' /> */}
     </div>
     <div className='nav-right'>
       <div className="cart-dot">

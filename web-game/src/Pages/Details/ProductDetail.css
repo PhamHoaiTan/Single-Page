@@ -100,6 +100,8 @@
 @media  screen and (max-width:600px) {
   .detail-right{
     width: 100%;
+    position: static;
+    z-index: 1000;
   }
   .details-content{
     display: flex;
@@ -110,6 +112,7 @@
   .deltail-h1{
     font-size: 2em;
   }
+
 
   .ProductDetail{
     margin-top: 10%;
