@@ -25,13 +25,7 @@ export const StoreContextProvider = (props) => {
           else if(count>0){
             dot.style.display = 'block';
           }
-  }, [cartItems]);
-  // useEffect(()=>{
-  //     const dot = document.getElementById("dot-img");
-  //       if(cartItems)
-  //         dot.style.display = 'none';
-  //   })
-    
+  }, [cartItems]);   
     const getTotalCartAmount = () => {
       let totalAmount = 0;
       for (const item in cartItems) {

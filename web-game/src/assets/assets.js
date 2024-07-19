@@ -15,6 +15,7 @@ import carousel from './Carousel.webp'
 import window_icon from './window_icon.png'
 import dot from './dot.jpg'
 import search_icon from './search_icon.png'
+import more from './mor.png'
 export const assets = {
     logo,
     account,
@@ -32,5 +33,5 @@ export const assets = {
     carousel,
     window_icon,
     dot,
-    search_icon
+    more
 }

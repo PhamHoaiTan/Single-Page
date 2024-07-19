@@ -9,16 +9,20 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "./Pages/Details/ProductDetail";
 import AddToCart from "./Pages/Cart/AddToCart";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
-import { StoreContext } from "./StoreContext/StoreContext";
+import ShowMore from "./components/ShowMore/ShowMore";
 
 function App() {
   const [showLogin, setShowLogin] = useState(false);
-  const {cartItems} = useContext(StoreContext)
+  const [showMore,setShowMore] = useState(false);
+  useEffect(()=>{
+    console.log(showMore)
+  },[showMore])
   return (
     <>
+      {showMore ?<ShowMore setShowMore={setShowMore}/> : <></>}
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="App">
-        <Navbar setShowLogin={setShowLogin} />
+        <Navbar setShowLogin={setShowLogin} setShowMore={setShowMore}  />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalogue" element={<Catalogue />} />

@@ -1,11 +1,9 @@
 // src/components/Navbar/Navbar.jsx
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
-import { StoreContext } from '../../StoreContext/StoreContext';
-function Navbar({setShowLogin}) {
-  const {cartItems} = useContext(StoreContext);  
+function Navbar({setShowLogin,setShowMore}) {
   return (
     <div className='navbar'>
     <div className="nav-left">
@@ -16,12 +14,13 @@ function Navbar({setShowLogin}) {
       {/* <img src={assets.search_icon} alt="" className='search-button' /> */}
     </div>
     <div className='nav-right'>
-      <div className="cart-dot">
+      <img src={assets.more} alt=""  className='more' onClick={()=>setShowMore(true)}/>
+      <div className="cart-dot" id='cart-dot'>
       <Link  to="/cart"><img src={assets.cart} alt="" className='cart'/></Link>
       <img src={assets.dot} alt="" className='dot-img' id='dot-img'  />
       </div>
-      <img src={assets.account} alt="" className='account-img' onClick={()=>setShowLogin(true)} />
-      <button className='bt-download'>Download</button>
+      <img src={assets.account} alt="" className='account-img' onClick={()=>setShowLogin(true)} id='account'/>
+      <button className='bt-download' id='bt-download'>Download</button>
     </div>
     </div>
   );

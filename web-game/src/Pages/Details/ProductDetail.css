@@ -97,7 +97,7 @@
   .p-left{
     text-align: left  ;
   }
-@media  screen and (max-width:600px) {
+@media  screen and (max-width:750px) {
   .detail-right{
     width: 100%;
     position: static;
