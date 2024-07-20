@@ -23,49 +23,6 @@ function ProductDetail() {
   const suggestion = useRef(null);
   const {addToCard } =
     useContext(StoreContext);
-
-  const [widthContain, setWidthContain] = useState(0);
-  const [topSuggest, setTopSuggest] = useState(0);
-  const [heightDetailRight, setHeightDetailRight] = useState(0);
-
-  useEffect(() => {
-    if (detailContain.current && detailRight.current && suggestion.current) {
-      setWidthContain(detailContain.current.offsetHeight);
-      setHeightDetailRight(detailRight.current.offsetHeight);
-      setTopSuggest(suggestion.current.offsetTop);
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const detailRightid = document.getElementById("detailRight");
-      if (window.innerWidth > 750) {
-        const scrollY = window.scrollY;
-        if (scrollY < topSuggest - heightDetailRight && scrollY < widthContain) {
-          detailRightid.style.position = "fixed";
-          detailRightid.style.top = "16%";
-          console.log("use")
-        } else if (scrollY  >= topSuggest - heightDetailRight) {
-          detailRightid.style.position = "absolute";
-          detailRightid.style.top = `${topSuggest - heightDetailRight-100}px`
-          detailRightid.style.right = '10%'
-        }
-        else{
-          detailRightid.style.position = "fixed";
-        }
-      } else {
-        detailRightid.style.position = "static";
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  },[widthContain, topSuggest, heightDetailRight]);
-
-  if (!product) {
-    return <div>Product not found</div>;
-  }
   const hanldeToCart = ({addToCard,id}) =>{
     addToCard(id)
     navigator('/cart');

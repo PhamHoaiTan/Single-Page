@@ -35,6 +35,7 @@
     grid-template-columns: 2fr 1fr;
     height: 80vh;
     position: relative;
+    position: -webkit-sticky;
     width: 100%;
   }
   .base-game p{ 
@@ -57,14 +58,12 @@
   }
   /* Right Details */
   .detail-right{
-    position: absolute;
+    position: sticky;
     width: 300px;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 16%;
-    right: 0;
   }
   .detail-bt button{
       width: 100%;
