@@ -7,6 +7,7 @@
     border-radius: 10px;
     color: #FFF;
     margin-top: 4%;
+    position: relative;
   }
   body{
     background-color: #121212;
@@ -31,11 +32,8 @@
     color: #FFF;
   }
   .details-content{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 80vh;
-    position: relative;
-    position: -webkit-sticky;
+    display: flex;
+    height: 1000;
     width: 100%;
   }
   .base-game p{ 
@@ -59,11 +57,12 @@
   /* Right Details */
   .detail-right{
     position: sticky;
-    width: 300px;
-    max-width: 500px;
     display: flex;
+    width: 100%;
+    top: 0;
+    left: 10;
+    z-index: 10;
     flex-direction: column;
-    justify-content: center;
   }
   .detail-bt button{
       width: 100%;

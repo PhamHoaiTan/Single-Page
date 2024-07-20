@@ -14,28 +14,23 @@ function ProductDetail() {
   }, []);
   const navigator = useNavigate();
   const product =
-    games.find((game) => game.id === id )||
-    gamesdiscount.find((game) => game.id === id)||
+    games.find((game) => game.id === id) ||
+    gamesdiscount.find((game) => game.id === id) ||
     freegame.find((game) => game.id === id);
-
-  const detailContain = useRef(null);
-  const detailRight = useRef(null);
-  const suggestion = useRef(null);
-  const {addToCard } =
-    useContext(StoreContext);
-  const hanldeToCart = ({addToCard,id}) =>{
-    addToCard(id)
-    navigator('/cart');
-  }
+  const { addToCard } = useContext(StoreContext);
+  const hanldeToCart = ({ addToCard, id }) => {
+    addToCard(id);
+    navigator("/cart");
+  };
   return (
     <div className="ProductDetail">
       <div className="name">
         <h1 className="deltail-h1">{product.name}</h1>
       </div>
-      <div className="details-content" ref={detailContain}>
+      <div className="details-content">
         {/* Detail Left */}
         <div className="detail-left">
-          <img src={product.image} alt={product.name} />
+          <img src={product.image}/>
           <div className="detail-description">
             <p>{product.description}</p>
           </div>
@@ -45,17 +40,22 @@ function ProductDetail() {
           </p>
         </div>
         {/* Detail Right */}
-        <div className="detail-right" id="detailRight" ref={detailRight}>
+        <div className="detail-right">
           <div className="base-game">
             <p>Base Game</p>
           </div>
           <p>{product.price}</p>
           <div className="detail-bt">
-            <button className="buyNow" onClick={() =>hanldeToCart({addToCard,id})}>
+            <button
+              className="buyNow"
+              onClick={() => hanldeToCart({ addToCard, id })}
+            >
               BUY NOW
             </button>
             <br></br>
-            <button className="addToCard"  onClick={() =>addToCard(id)}>ADD TO CARD</button>
+            <button className="addToCard" onClick={() => addToCard(id)}>
+              ADD TO CARD
+            </button>
           </div>
           <table>
             <tr>
@@ -93,7 +93,7 @@ function ProductDetail() {
           </table>
         </div>
       </div>
-      <div className="suggestion" ref={suggestion}>
+      <div className="suggestion">
         <Suggestions genre={product.genre} currentGameId={product.id} />
       </div>
     </div>
