@@ -19,6 +19,7 @@ export const StoreContextProvider = (props) => {
   useEffect(() => {
     console.log(cartItems,count);
      const dot = document.getElementById("dot-img");
+     const dotP = document.getElementById("dot-img-Phone")
           if(count===0){
             dot.style.display = 'none';
           }
@@ -26,6 +27,7 @@ export const StoreContextProvider = (props) => {
             dot.style.display = 'block';
           }
   }, [cartItems]);   
+  
     const getTotalCartAmount = () => {
       let totalAmount = 0;
       for (const item in cartItems) {

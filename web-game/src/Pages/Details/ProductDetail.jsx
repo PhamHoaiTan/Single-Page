@@ -43,15 +43,15 @@ function ProductDetail() {
         const scrollY = window.scrollY;
         if (scrollY < topSuggest - heightDetailRight && scrollY < widthContain) {
           detailRightid.style.position = "fixed";
-          detailRightid.style.top = "20%";
+          detailRightid.style.top = "16%";
           console.log("use")
-        } else if (scrollY >= topSuggest - heightDetailRight) {
+        } else if (scrollY  >= topSuggest - heightDetailRight) {
           detailRightid.style.position = "absolute";
-          detailRightid.style.top = `${topSuggest - heightDetailRight}px`;
-        } else {
+          detailRightid.style.top = `${topSuggest - heightDetailRight-100}px`
+          detailRightid.style.right = '10%'
+        }
+        else{
           detailRightid.style.position = "fixed";
-          detailRightid.style.top = "20%";
-
         }
       } else {
         detailRightid.style.position = "static";
@@ -70,8 +70,6 @@ function ProductDetail() {
     addToCard(id)
     navigator('/cart');
   }
-
-
   return (
     <div className="ProductDetail">
       <div className="name">

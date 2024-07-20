@@ -3,13 +3,12 @@
 body {
   color: white;
   background-color: black;
-  margin: 0;
   padding: 0;
 }
 .App{
   height: 90%;
   margin: auto 0;
-  
+  position: relative;
 }
 a{
   color: #FFF;
@@ -72,8 +71,11 @@ a{
     opacity: 100;
   }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
   .pre-next button{
     display: none;
+  }
+  body{
+    margin-top: 18%;
   }
 }

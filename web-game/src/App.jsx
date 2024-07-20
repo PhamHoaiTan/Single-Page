@@ -19,7 +19,7 @@ function App() {
   },[showMore])
   return (
     <>
-      {showMore ?<ShowMore setShowMore={setShowMore}/> : <></>}
+      {showMore ?<ShowMore setShowMore={setShowMore} setShowLogin={setShowLogin} showMore={showMore}/> : <></>}
       {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="App">
         <Navbar setShowLogin={setShowLogin} setShowMore={setShowMore}  showMore={showMore} />

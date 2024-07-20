@@ -8,13 +8,19 @@
   z-index: 1;
   top: 0;
   height: 4vw;
+  padding:  40px  0;
 }
 /* Left navbar */
 .logo{
   margin-left: 20px;
   width: 4vw;
   height: 100%;
-  border-radius: 70%;
+  border-radius: 50%;
+  margin-right: 30px ;
+}
+.logo-class{
+  border-right: 3px solid gray;
+  height: 50px;
 }
 .line {
   font-size: 30px;
@@ -70,20 +76,24 @@
 .search-button{
   cursor: pointer;
 }
-.more{
+.more {
   display: none;
+}
+.un-more{
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
 @media screen and (max-width:750px) {
    .navbar{
-    height: 50px;
+    height: 10%;
     font-size: 16px;
+    z-index: 2;
     margin: 0;
-    position: absolute;
    }
    .logo{
     width: 50px;
     height: 100%;
-    margin: 0;
    }
    .nav-left{
     gap: 10px;
@@ -106,6 +116,6 @@
    }
    .more{
     display: block;
-    margin-right: 10px ;
+    margin-right: 20px ;
    }
 }
