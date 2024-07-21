@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Catalogue.css";
 import { games } from "../../assets/games/game";
 
 function Catalogue() {
   const genres = [...new Set(games.map((game) => game.genre))];
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="Catalogue">
       <div className="catalogue-game-item">
