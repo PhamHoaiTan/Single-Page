@@ -80,7 +80,7 @@ function ProductDetail() {
             </tr>
             <tr style={{ alignItems: "center" }}>
               <td>
-                <p className="p-left">Platfrom</p>
+                <p className="p-left">Platform</p>
               </td>
               <td>
                 <img
