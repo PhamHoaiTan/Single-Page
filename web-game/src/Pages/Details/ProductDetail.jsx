@@ -54,7 +54,7 @@ function ProductDetail() {
             </button>
             <br></br>
             <button className="addToCard" onClick={() => addToCard(id)}>
-              ADD TO CARD
+              ADD TO CART
             </button>
           </div>
           <table>
