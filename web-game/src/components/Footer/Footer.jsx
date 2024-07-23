@@ -10,9 +10,9 @@ function Footer() {
     <div className="Footer">
       <h3>Connect With Us:</h3>
       <nav className='item-social'>
-        <a href="#"><img src={assets.facebook} alt=""  /></a>
-        <a href="#"><img src={assets.ins} alt="" /></a>
-        <a href="#"><img src={assets.tiktok} alt="" /></a>
+        <a href="https://www.facebook.com/"><img src={assets.facebook} alt=""  /></a>
+        <a href="https://www.instagram.com/"><img src={assets.ins} alt="" /></a>
+        <a href="https://www.tiktok.com/"><img src={assets.tiktok} alt="" /></a>
         <a href="#"><img src={assets.youtube} alt="" /></a>
         <a href="#"><img src={assets.telegram} alt="" /></a>
       </nav>
