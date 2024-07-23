@@ -22,12 +22,16 @@ a{
   gap: 50px;
   box-sizing: border-box;
   width: 250px;
-  height:500px;
+  height:300px;
+}
+.games:hover{
+  background-color: #0000;
+
 }
 .game img {
   border-radius: 5px;
   width: 100%;
-  height: 270px;
+  height: 100%;
 
 }
 

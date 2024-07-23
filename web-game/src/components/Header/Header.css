@@ -2,10 +2,13 @@
     margin-top: 5%;
     position: relative;
     background-size: cover;
+    margin: 5% auto;
+    text-align: center;
 }
 
 .header img{
-    width: 100%;
+    filter: brightness(80%);
+    width: 90%;
     height:28vw ;
     border-radius: 20px;
 }

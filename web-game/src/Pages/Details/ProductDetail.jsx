@@ -48,7 +48,7 @@ function ProductDetail() {
           <div className="detail-bt">
             <button
               className="buyNow"
-              onClick={() => hanldeToCart({ addToCard, id })}
+            onClick={() => hanldeToCart({ addToCard, id })}
             >
               BUY NOW
             </button>
