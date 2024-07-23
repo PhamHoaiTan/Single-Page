@@ -6,9 +6,6 @@
 .genre-section {
   margin-bottom: 40px;
 }
-.catalogue-game-item{
-  margin-top: 10%;
-}
 .catalogue-games{
   display: flex;
   gap: 20px;
