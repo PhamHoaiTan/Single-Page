@@ -35,12 +35,6 @@
     cursor: pointer;
     border: 1px solid black;
 }
-@media screen and (max-width:1500px) {
-
-    .header{
-        margin-top: 12%;
-    }
-}
 
 @media screen and (max-width:750px) {
     .header img{
@@ -57,7 +51,6 @@
         gap: 10px;
     }
     .header{
-        margin-top: 10%;
         text-align: center;
     }
     .header-img{
