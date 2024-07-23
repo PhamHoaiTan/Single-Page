@@ -25,7 +25,7 @@ function Navbar({setShowLogin,setShowMore,showMore}) {
     <div className="nav-left">
     <Link to={'/'}><img src={assets.logo} alt="" className='logo' id='logo'/></Link>
        <p className='line'>|</p>
-      <Link to="/"><h2>FPT GAMING ZONE</h2></Link>
+      <Link to="/"><h2 className='WebTitle'>FPT GAMING ZONE</h2></Link>
       <Link to='/catalogue' id='catelogue-id'><p>Catalogues</p></Link>
       {/* <img src={assets.search_icon} alt="" className='search-button' /> */}
     </div>

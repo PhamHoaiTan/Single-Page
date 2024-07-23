@@ -118,4 +118,7 @@
     display: block;
     margin-right: 20px ;
    }
+   .WebTitle{
+    display: none;
+   }
 }

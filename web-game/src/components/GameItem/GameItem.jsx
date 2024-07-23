@@ -31,7 +31,7 @@ const GameItem = ({
                 </div>
                 <p>Base game</p>
                 <h4>{name}</h4>
-                <p>{price}</p>
+                <p>{price}$</p>
                 <p>{genre}</p>
                 </div>
         }
