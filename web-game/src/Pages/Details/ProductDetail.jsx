@@ -44,7 +44,7 @@ function ProductDetail() {
           <div className="base-game">
             <p>Base Game</p>
           </div>
-          <p>{product.price}</p>
+          <p>{product.price}$</p>
           <div className="detail-bt">
             <button
               className="buyNow"

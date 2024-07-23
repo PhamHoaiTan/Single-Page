@@ -24,7 +24,7 @@ const AddToCard = () => {
                   <img src={item.image} alt="" />
                   <p>{item.name}</p>
                   <p>1</p>
-                  <p>{item.price}</p>
+                  <p>{item.price}$</p>
                   <p
                     className="remove-button"
                     onClick={() => removeFormCart(item.id)}
@@ -44,18 +44,18 @@ const AddToCard = () => {
           <div className="cart-totals-details">
             <p>Subtotal</p>
             <p>
-            {getTotalCartAmount()}
+            {getTotalCartAmount()}$
             </p>
           </div>
           <hr />
           <div className="cart-totals-details">
             <p>Service charge</p>
-            {2}
+            {2}$
           </div>
           <hr />
           <div className="cart-totals-details">
             <p>Total</p>
-            {getTotalCartAmount()+2}
+            {getTotalCartAmount()+2}$
           </div>
           <hr />
           </div>
