@@ -1,34 +1,64 @@
 /* Home.css */
 .Home {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #121212;
-
-  }
-  .HomeH2{
-    text-decoration: underline;
-  }
-.css-home{
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #121212;
-  margin: 0;
+
+  .section-title {
+    text-transform: uppercase;
+    font-size: 2.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.section-title span {
+    font-weight: bold;
+}
+
+.section-title .highlight {
+    color: #FF3366; /* Replace with your highlight color */
+}
+
+.section-title .normal {
+    color: #FFFFFF; /* Replace with your normal color */
+}
+
+/* Add responsive styles if needed */
+@media screen and (max-width: 750px) {
+    .section-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title {
+        font-size: 1.2em;
+    }
+}
+
+.css-home{
+width: 100%;
+background-color: #121212;
+margin: 0;
+}
+.text{
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+.title{
+  margin: 20px auto;
+  font-size: 1.5em;
+}
+@media screen and (max-width:750px) {
+  .Home{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .text{
-    overflow-x: scroll;
-    overflow-x: hidden;
+    overflow: auto;
   }
-  .title{
-    margin: 20px auto;
-    font-size: 1.5em;
-  }
-  @media screen and (max-width:750px) {
-    .Home{
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    .text{
-      overflow: auto;
-    }
+}
 }

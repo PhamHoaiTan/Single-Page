@@ -1,35 +1,35 @@
 /* src/components/Suggestions/Suggestions.css */
   
-  .Suggestions h2 {
-    color: #FFF;
-    margin-bottom: 20px;
-  }
-  
-  .suggested-games {
-    display: flex;
-  }
-  
-  .suggested-game {
-    margin: 10px;
-    text-align: center;
-    flex: 0 1 calc(25% - 20px); 
-  }
-  
-  .suggested-game img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .suggested-game .game-info {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #FFF;
-  }
+.Suggestions h2 {
+  color: #FFF;
+  margin-bottom: 20px;
+}
 
-  @media screen and (max-width:600px) {
-    .suggested-game{
-      flex: 0 1 calc(100% - 200px);
-    }
-   
+.suggested-games {
+  display: flex;
+}
+
+.suggested-game {
+  margin: 10px;
+  text-align: center;
+  flex: 0 1 calc(25% - 20px); 
+}
+
+.suggested-game img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.suggested-game .game-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+@media screen and (max-width:600px) {
+  .suggested-game{
+    flex: 0 1 calc(100% - 200px);
   }
+ 
+}

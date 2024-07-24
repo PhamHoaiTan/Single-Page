@@ -1,71 +1,85 @@
-
-.free-games{
-    justify-content: space-between; 
+.free-games {
+    justify-content: space-between;
     background-color: #2A2A2A;
     text-align: center;
     width: 90%;
     margin: 0 auto;
     padding-bottom: 10px;
     border-radius: 10px;
-}
-.flash-sales{
+  }
+  
+  .flash-sales {
     background-color: #2A2A2A;
     border-radius: 5px;
-}
-.games-items{
+  }
+  
+  .games-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-
-}
-.games-items .game img{
+  }
+  
+  .games-items .game img {
     width: 100%;
     height: 100%;
-}
-.free-games img{
+  }
+  
+  .free-games img {
     width: 100px;
-}
-.header-left{
+  }
+  
+  .header-left {
     display: flex;
     align-items: center;
-}
-.free-game-header{
+  }
+  
+  .free-game-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.free-game-header button{
+    margin-bottom: 20px; /* Add spacing below the header */
+  }
+  
+  .free-game-header button {
     width: 120px;
     padding: 10px 0;
     color: white;
     border: 1px solid white;
     background-color: #2A2A2A;
-}
-.game-banner-free{
+  }
+  
+  .game-banner-free {
     position: relative;
-}
-.banner-free{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 8%;
-    font-size: 1.2em;
-    align-items: center;
+    margin-bottom: 20px; /* Add spacing below the game image */
+  }
+  
+  .banner-free {
     background-color: #3C78F2;
-    position: absolute;
-}
-@media screen and (max-width:600px) {
-    .free-games{
-        width: 100%;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 20px; /* Ensure there is a 20px space below the image */
+  }
+  
+  .game p {
+    margin: 30px 0 10px 0; /* Add top margin of 30px and bottom margin of 10px */
+  }
+  
+  @media screen and (max-width:600px) {
+    .free-games {
+      width: 100%;
     }
-    .free-games img{
-        width: 50px;
+  
+    .free-games img {
+      width: 50px;
     }
-    .games-items{
-        display: flex;
-        flex-direction: column;
+  
+    .games-items {
+      display: flex;
+      flex-direction: column;
     }
-    .banner-free{
-        height: 12%;
+  
+    .banner-free {
+      height: 12%;
     }
-}
+  }
+  

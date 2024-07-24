@@ -28,7 +28,10 @@ const Trending = () => {
   return (
     <section className="trending">
     <div className="title-pre-next">
-    <h2 className='HomeH2'>Trending Now</h2>
+    <h2 className="section-title">
+    <span className="normal">TRENDING</span>
+    <span className="highlight"> NOW</span>
+</h2>
     <div className="pre-next">
       <button className='pre' onClick={handlePrevClick}><p>&#8249;</p></button>
       <button className="next" onClick={handleNextClick} ><p>&#8250;</p></button>

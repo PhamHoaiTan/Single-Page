@@ -34,7 +34,10 @@ const Gene = () => {
   return (
     <div className="Gene">
     <div className="title-pre-next">
-      <h2 className='HomeH2'>Flash Sales</h2>
+    <h2 className="section-title">
+    <span className="normal">FLASH</span>
+    <span className="highlight"> SALES</span>
+</h2>
       <div className="pre-next">
         <button className='pre' onClick={handlePrevClick} >&#8249;</button>
         <button className="next" onClick={handleNextClick} >&#8250;</button>

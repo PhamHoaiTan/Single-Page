@@ -2,8 +2,9 @@
 .Footer {
   background-color: #18181C;
   color: #FFF;
-  padding:100px 200px;
-  font-size: max(1vw,30px);
+  padding: 50px 20px;
+  font-size: max(1vw, 16px);
+  text-align: center;
 }
 
 .Footer a {
@@ -12,50 +13,57 @@
   text-decoration: none;
 }
 
-
-.item-social{
-  margin: 5px 0;
-}
-a{
-  text-decoration: none;
-  color: white;
+.item-social {
+  margin: 10px 0;
 }
 
-.Footer img{
-  width: 40px;
-  height: 40px;
+.Footer img {
+  width: 30px;
+  height: 30px;
   background-color: #FFF;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px black solid;
+  border: 1px solid black;
 }
+
 .Footer img:hover {
   background-color: aqua;
 }
-.footer-review{
-  margin: 20px 0;
-  display: grid ;
-  grid-template-columns: repeat(3,1fr);
 
+.footer-review {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
 }
-.footer-review p{
-  font-size: 15px;
+
+.footer-review p {
+  font-size: 14px;
 }
-.last-comment{
+
+.last-comment {
   margin-top: 10px;
   text-align: center;
 }
-.last-comment p{
+
+.last-comment p {
   font-size: 12px;
 }
-@media screen and (max-width:750px) {
-  .Footer{
-      padding:0;
+
+@media screen and (max-width: 750px) {
+  .Footer {
+    padding: 20px;
   }
-  .footer-review p{
-    font-size: 10px;
+
+  .footer-review {
+    grid-template-columns: 1fr;
   }
-  .last-comment p{
+
+  .footer-review p {
+    font-size: 12px;
+  }
+
+  .last-comment p {
     font-size: 10px;
   }
 }
