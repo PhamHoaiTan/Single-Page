@@ -3,12 +3,19 @@ import React, { useContext, useEffect, useState } from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
-function Navbar({setShowLogin,setShowMore,showMore}) {
-
+function Navbar({setShowLogin,setShowMore,showMore,aboutUs,setAboutUs}) {
   useEffect(()=>{
     const logo = document.getElementById('logo');
     const catelogue = document.getElementById('catelogue-id');
     const navBar = document.getElementById('navBar');
+      if(aboutUs){
+        navBar.style.position = 'static'
+      }else{
+        navBar.style.position = 'sticky'
+
+      }
+
+
     if(showMore){
       logo.style.display = 'none'
       catelogue.style.display = 'none'
@@ -23,10 +30,12 @@ function Navbar({setShowLogin,setShowMore,showMore}) {
   return (
     <div className='navbar' id='navBar'>
     <div className="nav-left">
-    <Link to={'/'}><img src={assets.logo} alt="" className='logo' id='logo'/></Link>
+    <Link to={'/'}><img src={assets.logo} alt="" className='logo' id='logo' onClick={()=>setAboutUs(false)}/></Link>
        <p className='line'>|</p>
-      <Link to="/"><h2 className='WebTitle'>FPT GAMING ZONE</h2></Link>
-      <Link to='/catalogue' id='catelogue-id'><p>Catalogues</p></Link>
+      <Link to="/"><h2 className='WebTitle' onClick={()=>setAboutUs(false)}>FPT GAMING ZONE</h2></Link>
+      <Link to='/catalogue' id='catelogue-id'onClick={()=>setAboutUs(false)} ><p>Catalogues</p></Link>
+      <Link to='/aboutUs' onClick={()=>setAboutUs(true)}><p>About FGZ</p></Link>
+
       {/* <img src={assets.search_icon} alt="" className='search-button' /> */}
     </div>
     <div className='nav-right'>
