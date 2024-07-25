@@ -1,29 +1,87 @@
 /* Catalogue.css */
 .Catalogue {
-  width: 80%; 
+  width: 90%; 
   margin: 0 auto;
+  padding-top: 20px;
 }
+
 .genre-section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
-.catalogue-game-item{
-  margin-top: 10%;
-}
-.catalogue-games{
+
+.catalogue-games {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
 }
-.catalogue-games img{
+
+.game {
   width: 250px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-h2{
-  margin: 10px auto;
+
+.game:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width:600px) {
-  .catalogue-game-item{
-    margin-top: 25%;
-  }
-  .Catalogue{
+
+.game img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.base-game {
+  margin: 10px 0 5px;
+  color: #b0b0b0;
+}
+
+.game-title {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.game-price {
+  margin: 10px 0;
+  color: #ff6f61;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 40px 0 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ff6f61;
+  font-size: 24px;
+  text-align: center;
+}
+
+.game-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .Catalogue {
     width: 100%;
+    padding: 0 10px;
+  }
+  
+  .catalogue-games {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game {
+    width: 90%;
   }
 }

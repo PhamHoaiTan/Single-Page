@@ -1,126 +1,169 @@
 /* src/Pages/Home/ProductDetail.css */
 .ProductDetail {
-    margin: auto;
-    width: 80%;
-    padding: 20px;
-    background-color: #121212;
-    border-radius: 10px;
-    color: #FFF;
-    margin-top: 4%;
-  }
-  body{
-    background-color: #121212;
-  }
-  .deltail-h1{
-    font-size: 50px;
-  }
-  
-  .ProductDetail img {
-    border-radius: 10px;
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-  }
-  .ProductDetail h1 {
-    margin-bottom: 20px;
-  }
-  
-  .ProductDetail p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #FFF;
-    
-  }
-  .details-content{
-    display: flex;
-    height: 1000px;
-    gap:20px;
-  }
-  .base-game p{ 
-    font-size: 14px;
-    background-color: #2A2A2A;
-    width: 80px;
-    padding: 5px;
-  }
-  /* Left Details */
-  .detail-left{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  .detail-left .genres{
-    color: #9A9A9A;
-  }
-  .detail-description p{
-    font-size: 25px;
-  }
-  /* Right Details */
-  .detail-right{
-    position: sticky;
-    display: flex;
-    width: 450px;
-    height: 40%;
-    top: 10%;
-    left: 10;
-    flex-direction: column;
-  }
-  .detail-bt button{
-      width: 100%;
-      padding: 15px;
-      margin-bottom: 20px;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      color: #F5F5F5;
-  }
-  .detail-bt .buyNow{
-    background-color: #3875E3;
-    border: none;
-  }
-  .detail-bt .buyNow:hover{
-    background-color: #488BE8;
-  }
-  .detail-bt .addToCard{
-    background-color: #121212;
-    border: white 1px solid;
-  }
-  .detail-bt .addToCard:hover {
-    background-color: #868686;
-  }
-  table{
-    width: 100%;
-    text-align: right;
-  }
-  table tr{
-  }
-  .p-left{
-    text-align: left  ;
-  }
-@media  screen and (max-width:750px) {
-  .detail-right{
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+  color: #FFF;
+  margin-top: 4%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ProductDetail:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  background-color: #121212;
+}
+
+.detail-h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #FFAA00;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 30px;
+}
+
+.detail-image {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.detail-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ProductDetail h1 {
+  margin-bottom: 20px;
+}
+
+.ProductDetail p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #FFF;
+}
+
+.details-content {
+  display: flex;
+  gap: 20px;
+}
+
+.base-game p {
+  font-size: 14px;
+  background-color: #2A2A2A;
+  width: 80px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.detail-left {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-left .genres {
+  color: #9A9A9A;
+}
+
+.detail-description p {
+  font-size: 20px;
+  background-color: #1F1F1F;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detail-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #1F1F1F;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detail-bt button {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #F5F5F5;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.detail-bt .buyNow {
+  background-color: #3875E3;
+  border: none;
+}
+
+.detail-bt .buyNow:hover {
+  background-color: #488BE8;
+  transform: translateY(-5px);
+}
+
+.detail-bt .addToCard {
+  background-color: #121212;
+  border: white 1px solid;
+}
+
+.detail-bt .addToCard:hover {
+  background-color: #868686;
+  transform: translateY(-5px);
+}
+
+table {
+  width: 100%;
+  text-align: right;
+}
+
+table tr {}
+
+.p-left {
+  text-align: left;
+}
+
+.platform-icon {
+  width: 50px;
+}
+
+@media screen and (max-width: 750px) {
+  .detail-right {
     width: 100%;
     position: static;
     z-index: 1;
   }
-  .details-content{
-    display: flex;
+
+  .details-content {
     flex-direction: column;
-    flex: auto auto auto;
   }
-  
-  .deltail-h1{
+
+  .detail-h1 {
     font-size: 2em;
   }
 
-
-  .ProductDetail{
+  .ProductDetail {
     margin-top: 10%;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
   }
-  .suggestion{
+
+  .suggestion {
     margin-top: 100px;
   }
 }

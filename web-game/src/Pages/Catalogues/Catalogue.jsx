@@ -10,29 +10,24 @@ function Catalogue() {
   },[])
   return (
     <div className="Catalogue">
-      <div className="catalogue-game-item">
-
-      </div>
       {genres.map((genre, index) => (
         <section key={index} className="genre-section">
           <h2>{genre}</h2>
-          <div className="text">
-            <div className="catalogue-games">
-              {games
-                .filter((game) => game.genre === genre)
-                .map((filteredGame) => (
-                  <Link to={`/product/${filteredGame.id}`}>
-                    <div key={filteredGame.id} className="game">
-                      <img src={filteredGame.image} alt={filteredGame.name} />
-                      <p>Base game</p>
-                      <h3>{filteredGame.name}</h3>
-                      <p>{filteredGame.price}</p>
-                    </div>
-                  </Link>
-                ))}
-            </div>
-            <hr />
+          <div className="catalogue-games">
+            {games
+              .filter((game) => game.genre === genre)
+              .map((filteredGame) => (
+                <Link to={`/product/${filteredGame.id}`} key={filteredGame.id} className="game-link">
+                  <div className="game">
+                    <img src={filteredGame.image} alt={filteredGame.name} />
+                    <p className="base-game">Base game</p>
+                    <h3 className="game-title">{filteredGame.name}</h3>
+                    <p className="game-price">${filteredGame.price}</p>
+                  </div>
+                </Link>
+              ))}
           </div>
+          <hr className="section-divider" />
         </section>
       ))}
     </div>

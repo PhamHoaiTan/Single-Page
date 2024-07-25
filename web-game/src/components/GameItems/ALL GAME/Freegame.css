@@ -1,9 +1,8 @@
 .free-games {
-    justify-content: space-between;
     background-color: #2A2A2A;
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
     padding-bottom: 10px;
     border-radius: 10px;
   }
@@ -14,9 +13,9 @@
   }
   
   .games-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
   
   .games-items .game img {
@@ -35,8 +34,8 @@
   
   .free-game-header {
     display: flex;
+    align-items: center; 
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px; /* Add spacing below the header */
   }
   
