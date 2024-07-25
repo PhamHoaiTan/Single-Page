@@ -77,11 +77,10 @@ h2 {
   }
   
   .catalogue-games {
-    flex-direction: column;
-    align-items: center;
+   display: flex;
+   flex-direction: row;
   }
-  
   .game {
-    width: 90%;
+    width: 95%;
   }
 }

@@ -23,7 +23,7 @@ const AboutUs = () => {
           Engine, Epic Games Store, and Epic Online Services, Epic provides an
           end-to-end digital ecosystem for developers and creators to build,
           distribute, and operate games and other content.
-          <h2>Contact</h2>
+          <h2 className="haha">Contact</h2>
           <div className="About-container-contact">
             <p className="About-container-border"></p>
             <p>620 Crossroads Blvd.</p>

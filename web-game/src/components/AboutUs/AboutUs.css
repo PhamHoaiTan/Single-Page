@@ -45,3 +45,12 @@
     gap: 20px;
     padding: 40px 0;
 }
+.haha{
+    color: black;
+    display: flex;
+}
+@media screen and (max-width:750px) {
+    .AboutUs-container{
+        width: 95%;
+    }
+}

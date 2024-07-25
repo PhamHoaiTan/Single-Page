@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 20px;
   background-color: #121212;
-
+}
   .section-title {
     text-transform: uppercase;
     font-size: 2.2vw;
@@ -53,12 +53,11 @@ margin: 0;
 }
 @media screen and (max-width:750px) {
   .Home{
-    width: 100%;
-    margin: 0;
+    width: 95%;
+    margin: 0 auto;
     padding: 0;
   }
   .text{
     overflow: auto;
   }
-}
 }

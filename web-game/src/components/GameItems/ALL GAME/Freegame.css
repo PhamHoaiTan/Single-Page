@@ -63,7 +63,7 @@
     margin: 30px 0 10px 0; /* Add top margin of 30px and bottom margin of 10px */
   }
   
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:750px) {
     .free-games {
       width: 100%;
     }
@@ -74,7 +74,7 @@
   
     .games-items {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
     }
   
     .banner-free {

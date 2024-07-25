@@ -9,7 +9,7 @@ const Header = () => {
         <img src={headerImage} alt="Header" />
       </div>
       <div className="header-text">
-        <h1>Welcome to FGZ</h1>
+        <h1>Welcome to <span className='FGZ'>FGZ</span></h1>
         <p>BROWSE OUR POPULAR GAMES HERE</p>
         <button className="brow">BROWSE NOW</button>
       </div>
