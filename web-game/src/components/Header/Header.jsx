@@ -12,7 +12,7 @@ const Header = () => {
       <div className="header-text">
         <h1>Welcome to <span className='FGZ'>FGZ</span></h1>
         <p>BROWSE OUR POPULAR GAMES HERE</p>
-        <button className="brow">BROWSE NOW</button>
+        <a href="/catalogue"><button className="brow">BROWSE NOW</button></a>
       </div>
     </div>
   );
