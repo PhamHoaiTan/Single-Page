@@ -6,7 +6,8 @@
     z-index: 2;
     justify-content: space-between;
     margin: 0;
-    top: 12%;
+    top: 9%;
+    
 }
 .ShowMore-container{
     position: relative;
@@ -50,7 +51,7 @@
     font-weight: 600;
     cursor: pointer;
     position: absolute;
-    bottom: 15%;
+    bottom: 35%;
     width: 80%;
     left: 10%;
 }

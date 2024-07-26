@@ -125,3 +125,15 @@
     display: none;
    }
 }
+@media screen and (max-width:1025px) {
+  .WebTitle{
+    display: none;
+   }
+   .logo{
+    width: 70px;
+    height: 100%;
+   }
+   .line{
+    display: none;
+   }
+}
