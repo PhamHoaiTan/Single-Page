@@ -3,7 +3,7 @@ import { assets } from '../../assets/assets'
 import './LoginPopup.css'
 const LoginPopup = ({setShowLogin}) => {
 
-    const [currState,setCurrState] = useState("Sign Up")
+    const [currState,setCurrState] = useState("Sign In")
 
   return (
     <div className='login-popup'>
@@ -22,8 +22,8 @@ const LoginPopup = ({setShowLogin}) => {
                 <input type="checkbox" required />
                 <p>By continuing, i agree to the terms of use & privacy policy</p>
             </div>:<></>}
-            {currState==="Sign Up"?<p>Create a new account ?<span onClick={()=>setCurrState("Sign In")}> Click here</span></p>
-            :<p>Already have an account? <span onClick={()=>setCurrState("Sign Up")}> Login here</span></p>
+            {currState==="Sign In"?<p>Create a new account ?<span onClick={()=>setCurrState("Sign Up")}> Click here</span></p>
+            :<p>Already have an account? <span onClick={()=>setCurrState("Sign In")}> Login here</span></p>
             }
         </form>    
     </div>
